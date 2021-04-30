@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 28, 2021, 10:31:26 PM
+    Author     : ASUS
+*/
+
+.button{
+    -fx-background-color: #F6DE4B;
+}
+
+.button:hover{
+    -fx-background-color:#FFA213;
+}
+
+
+
+
+
+
+/*#searchButton:hover{
+
+}
+#libraryButton:hover{
+    -fx-background-color:#FFA213;
+
+}
+#filesButton:hover{
+    -fx-background-color:#FFA213;
+
+}#playlistButton:hover{
+    -fx-background-color:#FFA213;
+
+}#internetButton:hover{
+    -fx-background-color:#FFA213;
+
+}#devicesButton:hover{
+    -fx-background-color:#FFA213;
+
+}*/

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.EntranceUIController">
+   <children>
+      <Pane fx:id="contentArea" layoutX="-14.0" layoutY="51.0" prefHeight="576.0" prefWidth="1076.0" style="-fx-background-color: #c1dbd9;" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+         <children>
+            <Label layoutX="411.0" layoutY="219.0" text="Click on a Tab to View">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <VBox prefHeight="631.0" prefWidth="206.0" style="-fx-background-color: #F6DE4B;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#search" prefHeight="50.0" prefWidth="206.0" text="Search">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="libraryButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#library" prefHeight="50.0" prefWidth="206.0" text="Library">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="filesButton" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#files" prefHeight="50.0" prefWidth="206.0" text="Files">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="playlistButton" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" onAction="#playlist" prefHeight="50.0" prefWidth="206.0" text="Playlist">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="internetButton" layoutX="10.0" layoutY="160.0" mnemonicParsing="false" onAction="#internet" prefHeight="50.0" prefWidth="206.0" text="Internet">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="devicesButton" layoutX="10.0" layoutY="210.0" mnemonicParsing="false" onAction="#devices" prefHeight="50.0" prefWidth="206.0" text="Devices">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc336" height="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="124.0" />
+            <Button fx:id="songInfoButton" layoutX="10.0" layoutY="420.0" mnemonicParsing="false" onAction="#songInfo" prefHeight="50.0" prefWidth="206.0" text="Song Info">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="artistInfoButton" layoutX="10.0" layoutY="480.0" mnemonicParsing="false" onAction="#artistInfo" prefHeight="50.0" prefWidth="206.0" text="Artist Info">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </VBox>
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Music">
+            <items>
+              <MenuItem fx:id="openFIle" mnemonicParsing="false" text="Open File" />
+                  <MenuItem fx:id="openAudio" mnemonicParsing="false" text="Open Audio CD" />
+                  <MenuItem fx:id="addPodcast" mnemonicParsing="false" text="Add podcast" />
+                  <MenuItem fx:id="previousTrack" mnemonicParsing="false" text="Previous track" />
+                  <MenuItem fx:id="play" mnemonicParsing="false" text="Play" />
+                  <MenuItem fx:id="stop" mnemonicParsing="false" text="Stop" />
+                  <MenuItem fx:id="nextTrack" mnemonicParsing="false" text="Next track" />
+                  <MenuItem fx:id="mute" mnemonicParsing="false" text="Mute" />
+                  <MenuItem fx:id="love" mnemonicParsing="false" text="Love" />
+                  <MenuItem fx:id="quit" mnemonicParsing="false" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Playlist">
+            <items>
+              <MenuItem fx:id="addFile" mnemonicParsing="false" text="Add FIle" />
+                  <MenuItem fx:id="addFolder" mnemonicParsing="false" text="Add folder" />
+                  <MenuItem fx:id="addStream" mnemonicParsing="false" text="Add stream" />
+                  <MenuItem fx:id="shuffleMode" mnemonicParsing="false" text="Shuffle Mode" />
+                  <MenuItem fx:id="repeatMode" mnemonicParsing="false" text="Repeat Mode" />
+                  <MenuItem fx:id="newPlaylist" mnemonicParsing="false" text="New playlist" />
+                  <MenuItem fx:id="savePlaylist" mnemonicParsing="false" text="Save playlist" />
+                  <MenuItem fx:id="loadPlaylist" mnemonicParsing="false" text="Load playlist" />
+                  <MenuItem fx:id="jumpCurrentPlayingTrack" mnemonicParsing="false" text="Jump to the current playing track" />
+                  <MenuItem fx:id="clearPlaylist" mnemonicParsing="false" text="Clear Playlist" />
+                  <MenuItem fx:id="shufflePlaylist" mnemonicParsing="false" text="Shuffle playlist" />
+                  <MenuItem fx:id="removeDuplicates" mnemonicParsing="false" text="Remove duplicates from playlis" />
+                  <MenuItem fx:id="removeUnavailable" mnemonicParsing="false" text="Remove unavailable tracks from playlist" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tools">
+            <items>
+              <MenuItem fx:id="coverManager" mnemonicParsing="false" onAction="#openCoverManager" text="Cover Manager" />
+                  <MenuItem fx:id="queueManager" mnemonicParsing="false" onAction="#openQueueManager" text="Queue Manager" />
+                  <MenuItem mnemonicParsing="false" onAction="#openEqualizer" text="Equalizer" />
+                  <MenuItem mnemonicParsing="false" onAction="#openVisualizations" text="Visualizations" />
+                  <MenuItem fx:id="transcodeMusic" mnemonicParsing="false" onAction="#openTranscode" text="Transcode Music" />
+                  <MenuItem fx:id="ripAudioCD" mnemonicParsing="false" onAction="#openRipAudioCD" text="Rip audio CD" />
+                  <MenuItem fx:id="updateChangedLib" mnemonicParsing="false" text="Update changed library folders" />
+                  <MenuItem fx:id="fullLibraryRescan" mnemonicParsing="false" text="Do a full library rescan" />
+                  <MenuItem fx:id="preferences" mnemonicParsing="false" onAction="#openPreferences" text="Preferences" />
+                  <MenuItem fx:id="checkUpdates" mnemonicParsing="false" text="Check for updates" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Extras">
+               <items>
+                  <MenuItem fx:id="rain" mnemonicParsing="false" text="Rain" />
+                  <MenuItem fx:id="hypnotoad" mnemonicParsing="false" text="All Glory to the hypnotoad" />
+                  <MenuItem fx:id="makeItSo" mnemonicParsing="false" text="Make it so" />
+                  <MenuItem fx:id="kittens" mnemonicParsing="false" text="Kittens" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="aboutClementine" mnemonicParsing="false" onAction="#openAboutClementine" text="About Clementine" />
+                  <MenuItem fx:id="aboutQT" mnemonicParsing="false" onAction="#openaboutQT" text="About QT" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="CENTER" layoutX="563.0" layoutY="606.0" prefHeight="114.0" prefWidth="1280.0" style="-fx-background-color: #f6c04b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" text="\@danuka" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
