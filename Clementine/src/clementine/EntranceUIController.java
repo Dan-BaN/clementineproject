@@ -15,9 +15,12 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -179,6 +182,9 @@ public class EntranceUIController implements Initializable {
     @FXML
     private MenuItem aboutQT;
     
+    @FXML
+    private MenuItem visualizations;
+    
     
     //init function
     @Override
@@ -186,8 +192,6 @@ public class EntranceUIController implements Initializable {
         // TODO
         
     }
-    
-    
     
     //sidePanel functions to change middle anchor pane
     
@@ -197,6 +201,9 @@ public class EntranceUIController implements Initializable {
             Parent fxml = FXMLLoader.load(getClass().getResource("/clementine/artistInfo/artistInfoPage.fxml"));
             contentArea.getChildren().removeAll();
             contentArea.getChildren().setAll(fxml);
+            
+            
+            
         }
         catch(Exception ex){
             ex.printStackTrace();
@@ -297,8 +304,6 @@ public class EntranceUIController implements Initializable {
     
   
 
-    
-    
     //menu item functions to open new window to show UI
      @FXML
     void openAboutClementine(ActionEvent event) {
@@ -306,8 +311,18 @@ public class EntranceUIController implements Initializable {
     }
 
     @FXML
-    void openCoverManager(ActionEvent event) {
-
+    void openCoverManager(ActionEvent event){
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/files/filesPage.fxml"));
+            Parent root5 = (Parent) fxmlLoader.load();
+            Stage deviceStage = new Stage();
+            deviceStage.setTitle("Equlaizer");
+            deviceStage.setScene(new Scene(root5));
+            deviceStage.show();
+        }
+        catch (Exception e){
+            System.out.println("Cant load new window");
+        }
     }
 
     @FXML
@@ -332,21 +347,39 @@ public class EntranceUIController implements Initializable {
 
     @FXML
     void openTranscode(ActionEvent event) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/transcodeMusic/transcodeMusic.fxml"));
+            Parent root5 = (Parent) fxmlLoader.load();
+            Stage deviceStage = new Stage();
+            deviceStage.setTitle("Transcode Music");
+            deviceStage.setScene(new Scene(root5));
+            deviceStage.show();
+        }
+        catch (Exception e){
+            System.out.println("Cant load new window");
+        }
 
     }
 
     @FXML
     void openVisualizations(ActionEvent event) {
 
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/visualizations/transcodeMusic.fxml"));
+            Parent root5 = (Parent) fxmlLoader.load();
+            Stage deviceStage = new Stage();
+            deviceStage.setTitle("Transcode Music");
+            deviceStage.setScene(new Scene(root5));
+            deviceStage.show();
+        }
+        catch (Exception e){
+            System.out.println("Cant load new window");
+        }
+        
     }
 
     @FXML
     void openaboutQT(ActionEvent event) {
 
     }
-
-    
-    
-    
-    
 }

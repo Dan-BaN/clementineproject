@@ -1,14 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.artistInfo.ArtistInfoPageController">
-    <stylesheets>
-        <URL value="@artistinfopage.css" />
-    </stylesheets>
+
+<Pane fx:id="artistPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1076.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="147.0" layoutY="99.0" text="Artist Info" />
+      <SplitPane dividerPositions="0.7039106145251397" prefHeight="583.0" prefWidth="1076.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #d8d6d0;">
+               <children>
+                  <Label layoutX="40.0" layoutY="38.0" text="Bob Marley - Artist">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Pane id="pane" layoutX="40.0" layoutY="91.0" prefHeight="200.0" prefWidth="627.0" style="-fx-background-color: #efac1a; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="189.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+                           <image>
+                              <Image url="@../../images/artistInfo/bobMarley1.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);">
+                           <image>
+                              <Image url="@../../images/artistInfo/bobMarley2.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="395.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0); -fx-border-raduis: 20;">
+                           <image>
+                              <Image url="@../../images/artistInfo/bobMarley3.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label layoutX="50.0" layoutY="320.0" prefHeight="233.0" prefWidth="618.0" text="Robert Nesta &quot;Bob&quot; Marley, OM (6 February 1945 – 11 May 1981) was a Jamaican singer, songwriter, and musician. Considered one of the pioneers of reggae, his musical career was marked by fusing elements of reggae, ska, and rocksteady, as well as his distinctive vocal and songwriting style. Marley's contributions to music increased the visibility of Jamaican music worldwide, and made him a global figure in popular culture for over a decade. Over the course of his career Marley became known as a Rastafari icon, and he infused his music with a sense of spirituality. He is also considered a global symbol of Jamaican music and culture and identity, and was controversial in his outspoken support for the legalization of marijuana, while he also advocated for Pan-Africanism. [referenced from wikipedia]" wrapText="true" />
+                  <Label layoutX="472.0" layoutY="43.0" text="Jamaican singer, songwriter">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: d8d6d0;">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="14.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/playIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="20.0" layoutY="174.0" text="Stir it up" />
+                  <Label layoutX="209.0" layoutY="174.0" text="3:30" />
+                  <Label layoutX="52.0" layoutY="205.0" text="One Love" />
+                  <Label layoutX="238.0" layoutY="205.0" text="3:30" />
+                  <Label layoutX="20.0" layoutY="237.0" text="Concrete Jungle" />
+                  <Label layoutX="209.0" layoutY="237.0" text="3:30" />
+                  <Label layoutX="20.0" layoutY="270.0" text="No woman no cry" />
+                  <Label layoutX="209.0" layoutY="270.0" text="3:30" />
+                  <Label layoutX="20.0" layoutY="304.0" text="Sun is shining" />
+                  <Label layoutX="209.0" layoutY="304.0" text="3:30" />
+                  <Label layoutX="20.0" layoutY="335.0" text="Slave Driver" />
+                  <Label layoutX="209.0" layoutY="335.0" text="3:30" />
+                  <Label layoutX="20.0" layoutY="145.0" text="Redemption Song" />
+                  <Label layoutX="209.0" layoutY="145.0" text="3:30" />
+                  <Label layoutX="20.0" layoutY="117.0" text="Could you be loved" />
+                  <Label layoutX="209.0" layoutY="117.0" text="3:30" />
+                  <Label layoutX="20.0" layoutY="49.0" text="MyPlayList">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="194.0" layoutY="54.0" text="7 tracks">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
-</AnchorPane>
+</Pane>

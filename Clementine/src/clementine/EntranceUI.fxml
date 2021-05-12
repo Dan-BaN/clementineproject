@@ -133,7 +133,7 @@
               <MenuItem fx:id="coverManager" mnemonicParsing="false" onAction="#openCoverManager" text="Cover Manager" />
                   <MenuItem fx:id="queueManager" mnemonicParsing="false" onAction="#openQueueManager" text="Queue Manager" />
                   <MenuItem mnemonicParsing="false" onAction="#openEqualizer" text="Equalizer" />
-                  <MenuItem mnemonicParsing="false" onAction="#openVisualizations" text="Visualizations" />
+                  <MenuItem fx:id="visualizations" mnemonicParsing="false" onAction="#openVisualizations" text="Visualizations" />
                   <MenuItem fx:id="transcodeMusic" mnemonicParsing="false" onAction="#openTranscode" text="Transcode Music" />
                   <MenuItem fx:id="ripAudioCD" mnemonicParsing="false" onAction="#openRipAudioCD" text="Rip audio CD" />
                   <MenuItem fx:id="updateChangedLib" mnemonicParsing="false" text="Update changed library folders" />

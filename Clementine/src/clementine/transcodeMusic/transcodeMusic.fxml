@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="523.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="47.0" layoutY="39.0" prefHeight="352.0" prefWidth="438.0" style="-fx-background-color: #e8e8e8;">
+         <children>
+            <Button layoutX="35.0" layoutY="290.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="112.0" text="Add File" />
+            <Button layoutX="163.0" layoutY="290.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="112.0" text="Add Directory" />
+            <Button layoutX="286.0" layoutY="290.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #7C0000;" text="Remove" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextArea layoutX="65.0" layoutY="49.0" prefHeight="210.0" prefWidth="309.0" />
+            <Label layoutX="147.0" layoutY="14.0" text="Files to transcode" />
+         </children>
+      </Pane>
+      <Pane layoutX="47.0" layoutY="422.0" prefHeight="144.0" prefWidth="438.0" style="-fx-background-color: #e8e8e8;">
+         <children>
+            <Label layoutX="159.0" layoutY="14.0" text="Output options" />
+            <Label layoutX="29.0" layoutY="50.0" text="Audio Format" />
+            <Label layoutX="29.0" layoutY="98.0" text="Destination" />
+            <ComboBox fx:id="combAudio" layoutX="132.0" layoutY="45.0" onAction="#select" prefHeight="31.0" prefWidth="196.0" promptText="Ogg Vorbis (.ogg)" />
+            <ComboBox fx:id="combDestination" layoutX="132.0" layoutY="93.0" onAction="#selectD" prefHeight="31.0" prefWidth="196.0" promptText="Select Destination" />
+            <Button layoutX="344.0" layoutY="45.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="72.0" text="Options" />
+            <Button layoutX="344.0" layoutY="93.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="72.0" text="Select" />
+         </children>
+      </Pane>
+      <Button layoutX="107.0" layoutY="577.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="137.0" text="Start Transcoding" />
+      <Button layoutX="276.0" layoutY="577.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="137.0" style="-fx-background-color: #7C0000;" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

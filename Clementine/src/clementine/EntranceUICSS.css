@@ -16,6 +16,10 @@ and open the template in the editor.
     -fx-background-color:#FFA213;
 }
 
+.button:active{
+     -fx-background-color:#FFA213;
+
+}
 
 
 
