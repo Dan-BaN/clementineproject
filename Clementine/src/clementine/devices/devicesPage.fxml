@@ -1,14 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.net.URL?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.devices.DevicesPageController">
-    <stylesheets>
-        <URL value="@devicespage.css" />
-    </stylesheets>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.devices.DevicesPageController">
    <children>
-      <Label layoutX="228.0" layoutY="154.0" text="devices page" />
+      <SplitPane layoutX="2.0" layoutY="1.0" prefHeight="800.0" prefWidth="1500.0">
+        <items>
+          <AnchorPane minHeight="800.0" minWidth="1500.0" prefHeight="585.0" prefWidth="758.0" style="-fx-background-color: orange;" styleClass="body" stylesheets="@devicespage.css">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7a900" height="79.0" layoutX="492.0" layoutY="436.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="71.0" layoutX="-1.0" layoutY="181.0" mouseTransparent="true" stroke="BLACK" strokeType="INSIDE" width="490.0" />
+                  <Text layoutX="24.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Devices">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="41.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="60.0" fitWidth="44.0" layoutX="50.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/android.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="59.0" fitWidth="47.0" layoutX="46.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/apple.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="59.0" fitWidth="47.0" layoutX="44.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/android.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="44.0" layoutX="46.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/android.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="60.0" fitWidth="44.0" layoutX="43.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/apple.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="53.0" fitWidth="45.0" layoutX="42.0" layoutY="477.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/android.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#f4f4f4" layoutX="127.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name G7643-03" />
+                  <Text fill="WHITE" layoutX="359.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online" />
+                  <Circle fill="DODGERBLUE" layoutX="346.0" layoutY="144.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: green;" />
+                  <Text fill="#f4f4f4" layoutX="127.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name S35FE-03" />
+                  <Text fill="WHITE" layoutX="359.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online" />
+                  <Circle fill="DODGERBLUE" layoutX="346.0" layoutY="216.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: green;" />
+                  <Text fill="#f4f4f4" layoutX="127.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name TRYY43-03" />
+                  <Text fill="WHITE" layoutX="359.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offline" />
+                  <Circle fill="#f20000" layoutX="346.0" layoutY="292.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: red;" />
+                  <Text fill="#f4f4f4" layoutX="124.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name T564563-03" />
+                  <Text fill="WHITE" layoutX="356.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offline" />
+                  <Circle fill="#f20000" layoutX="343.0" layoutY="359.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: red;" />
+                  <Text fill="#f4f4f4" layoutX="126.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name DV4433-03" />
+                  <Text fill="WHITE" layoutX="358.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offline" />
+                  <Circle fill="#f20000" layoutX="345.0" layoutY="507.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: red;" />
+                  <Text fill="#f4f4f4" layoutX="124.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name DV4433-03" />
+                  <Text fill="WHITE" layoutX="356.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online" />
+                  <Circle fill="#f20000" layoutX="343.0" layoutY="434.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: green;" />
+                  <Button layoutX="278.0" layoutY="35.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: grey;" text="Add Device" textOverrun="LEADING_WORD_ELLIPSIS">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <Line endX="-12.599945068359375" endY="631.2000732421875" layoutX="504.0" layoutY="122.0" startX="-12.5999755859375" startY="-121.0" stroke="#fffbfb" />
+                  <Line endX="74.60003662109375" endY="-7.62939453125E-6" layoutX="651.0" layoutY="92.0" startX="-147.0" startY="-7.62939453125E-6" stroke="WHITE" />
+                  <ImageView fitHeight="60.0" fitWidth="66.0" layoutX="495.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/apple.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#f4f4f4" layoutX="572.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name S35FE-03" />
+                  <Text fill="#f4f4f4" layoutX="572.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Status : Connected" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="38.0" layoutX="556.0" layoutY="116.0" stroke="BLACK" strokeType="INSIDE" width="125.0" />
+                  <Text layoutX="594.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Backup" wrappingWidth="51.999999999999886">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="570.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IP address : " />
+                  <Text fill="WHITE" layoutX="568.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="192.168.100.100" />
+                  <Line endX="54.79998779296875" endY="-1.52587890625E-5" layoutX="670.0" layoutY="224.0" startX="-165.30706787109375" startY="-7.62939453125E-6" stroke="WHITE" />
+                  <Line endX="54.79998779296875" endY="-1.52587890625E-5" layoutX="669.0" layoutY="358.0" startX="-165.30706787109375" startY="-7.62939453125E-6" stroke="WHITE" />
+                  <Line endX="74.00006103515625" endY="1.00006103515625" layoutX="668.0" layoutY="514.0" startX="-176.0" startY="1.00006103515625" stroke="WHITE" />
+                  <Text fill="WHITE" layoutX="570.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agent Version:" />
+                  <Text fill="WHITE" layoutX="565.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12.6.12801/ Android Eclaires" />
+                  <Text fill="WHITE" layoutX="570.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Storage " />
+                  <Text fill="WHITE" layoutX="567.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" 64GB" />
+                  <ProgressIndicator layoutX="512.0" layoutY="442.0" prefHeight="41.0" prefWidth="52.0" progress="0.38" style="-fx-background-color: orange;" />
+                  <ProgressIndicator layoutX="569.0" layoutY="442.0" prefHeight="41.0" prefWidth="52.0" progress="0.22" style="-fx-background-color: orange;" />
+                  <ProgressIndicator layoutX="634.0" layoutY="442.0" prefHeight="41.0" prefWidth="52.0" progress="0.66" style="-fx-background-color: orange;" />
+                  <ProgressIndicator layoutX="696.0" layoutY="443.0" prefHeight="41.0" prefWidth="52.0" progress="0.13" style="-fx-background-color: orange;" />
+                  <Text layoutX="509.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Songs" />
+                  <Text layoutX="564.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Videos" />
+                  <Text layoutX="617.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Documents" />
+                  <Text layoutX="691.0" layoutY="503.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos" />
+                  <ImageView fitHeight="102.0" fitWidth="142.0" layoutX="528.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../dhanuka/images/istockphoto-1211986724-640x640.jpg" />
+                     </image>
+                  </ImageView>
+                  <Line endX="236.00006103515625" endY="618.0" layoutX="507.0" layoutY="132.0" startX="236.00006103515625" startY="-132.0" stroke="#fffbfb" />
+                  <ImageView fitHeight="512.0" fitWidth="610.0" layoutX="636.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/unnamed.png" />
+                     </image>
+                  </ImageView>
+                  <ListView layoutX="788.0" layoutY="95.0" prefHeight="359.0" prefWidth="202.0" />
+                  <Text layoutX="800.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Songs In Your Phone">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="805.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Beach Boys – Surf's Up" wrappingWidth="174.06665039062506" />
+                  <Text layoutX="805.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bob Dylan – Masters of War." wrappingWidth="166.1409530639645" />
+                  <Text layoutX="806.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Beatles – Hey Jude. " wrappingWidth="141.00000000000006" />
+                  <Text layoutX="806.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Johnny Cash – I Still Miss Someone" wrappingWidth="141.00000000000006" />
+                  <Text layoutX="807.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Johnny Mandel and Mike Altman " wrappingWidth="141.00000000000006" />
+                  <Text layoutX="807.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Smiths – There Is a Light " wrappingWidth="141.00000000000006" />
+                  <VBox layoutX="788.0" layoutY="149.0" prefHeight="263.0" prefWidth="202.0" style="-fx-border-color: orange;" />
+                  <Text fill="#fc0000" layoutX="795.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drag and Drop the songs and press sync" wrappingWidth="187.99999999999994" />
+                  <Button layoutX="857.0" layoutY="461.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="63.0" text="SYNC" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
-</AnchorPane>
+</Pane>
