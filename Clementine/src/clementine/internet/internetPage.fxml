@@ -1,14 +1,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import java.net.URL?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="clementine.internet.InternetPageController">
-    <stylesheets>
-        <URL value="@internetpage.css" />
-    </stylesheets>
+<AnchorPane id="AnchorPane" prefHeight="609.0" prefWidth="1132.0" styleClass="body-background" stylesheets="@internetpage.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.internet.InternetPageController">
    <children>
-      <Label layoutX="300.0" layoutY="200.0" text="internet page" />
+      <ScrollPane hbarPolicy="NEVER" prefHeight="609.0" prefWidth="1130.0" styleClass="body-background" stylesheets="@internetpage.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="617.0" prefWidth="1132.0" styleClass="body-background" stylesheets="@internetpage.css">
+               <children>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="521.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="427.0" AnchorPane.leftAnchor="521.0" AnchorPane.rightAnchor="475.0" AnchorPane.topAnchor="54.0">
+                     <image>
+                        <Image url="@../../images/Amazon_Drive_icon.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="288.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="634.0" AnchorPane.leftAnchor="288.0" AnchorPane.rightAnchor="708.0" AnchorPane.topAnchor="54.0">
+                     <image>
+                        <Image url="@../../images/1101px-Dropbox_Icon.svg.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="spotify" fitHeight="136.0" fitWidth="142.0" layoutX="65.0" layoutY="52.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="429.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="931.0" AnchorPane.topAnchor="52.0">
+                     <image>
+                        <Image url="@../../images/2111624.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="720.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="427.0" AnchorPane.leftAnchor="720.0" AnchorPane.rightAnchor="276.0" AnchorPane.topAnchor="54.0">
+                     <image>
+                        <Image url="@../../images/apps.22785.13510798882873389.58b33862-cbf0-446a-a3fd-b7e45c7624c9.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="291.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="291.0" AnchorPane.rightAnchor="705.0" AnchorPane.topAnchor="344.0">
+                     <image>
+                        <Image url="@../../images/icon.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="65.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="931.0" AnchorPane.topAnchor="344.0">
+                     <image>
+                        <Image url="@../../images/Seafile.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="931.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="429.0" AnchorPane.leftAnchor="931.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="52.0">
+                     <image>
+                        <Image url="@../../images/soundcloud-512.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="521.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="521.0" AnchorPane.rightAnchor="475.0" AnchorPane.topAnchor="344.0">
+                     <image>
+                        <Image url="@../../images/somafm-icon.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="720.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="720.0" AnchorPane.rightAnchor="276.0" AnchorPane.topAnchor="344.0">
+                     <image>
+                        <Image url="@../../images/Microsoft-OneDrive-icon.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="142.0" layoutX="931.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" styleClass="image" AnchorPane.bottomAnchor="344.0" AnchorPane.leftAnchor="931.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="344.0">
+                     <image>
+                        <Image url="@../../images/magnatune-icon.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label layoutX="109.0" layoutY="216.0" prefHeight="21.0" prefWidth="59.0" text="Spotify">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="326.0" layoutY="216.0" prefHeight="21.0" prefWidth="67.0" text="Dropbox">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="511.0" layoutY="216.0" prefHeight="21.0" prefWidth="172.0" text="Amazon Cloud Services">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="750.0" layoutY="216.0" prefHeight="21.0" prefWidth="110.0" text="Rock Radio">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="321.0" layoutY="498.0" prefHeight="21.0" prefWidth="77.0" text="Jazz Radio">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="109.0" layoutY="498.0" prefHeight="21.0" prefWidth="48.0" text="Seafile">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="950.0" layoutY="216.0" prefHeight="21.0" prefWidth="98.0" text="Soundcloud">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="548.0" layoutY="498.0" prefHeight="21.0" prefWidth="83.0" text="Soma FM">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="747.0" layoutY="498.0" prefHeight="21.0" prefWidth="83.0" text="One Drive">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+                  <Label layoutX="958.0" layoutY="498.0" prefHeight="21.0" prefWidth="83.0" text="Magnatune">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

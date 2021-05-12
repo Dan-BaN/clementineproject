@@ -16,9 +16,10 @@ import javafx.fxml.Initializable;
  */
 public class InternetPageController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+    public void goToLogin(){
+        System.out.println("Clicked");
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

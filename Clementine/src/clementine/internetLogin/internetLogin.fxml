@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.internetLogin.InternetLoginController">
+    <stylesheets>
+        <URL value="@internetlogin.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="379.0" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="71.0">
+         <image>
+            <Image url="@../../images/2111624.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="249.0" layoutY="307.0" prefHeight="31.0" prefWidth="352.0" AnchorPane.bottomAnchor="262.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="199.0" AnchorPane.topAnchor="307.0" />
+      <TextField layoutX="249.0" layoutY="375.0" prefHeight="31.0" prefWidth="352.0" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="199.0" AnchorPane.topAnchor="375.0" />
+      <Button fx:id="login" layoutX="304.0" layoutY="451.0" mnemonicParsing="false" onMouseClicked="#goToSpotifyplaylists" prefHeight="31.0" prefWidth="192.0" style="-fx-background-color: green;" text="Login" AnchorPane.bottomAnchor="118.0" AnchorPane.leftAnchor="304.0" AnchorPane.rightAnchor="304.0" AnchorPane.topAnchor="451.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="116.0" layoutY="312.0" prefHeight="21.0" prefWidth="88.0" text="Username" AnchorPane.bottomAnchor="267.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="596.0" AnchorPane.topAnchor="312.0" />
+      <Label layoutX="116.0" layoutY="380.0" prefHeight="21.0" prefWidth="88.0" text="Password" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="596.0" AnchorPane.topAnchor="380.0" />
+   </children>
+</AnchorPane>
