@@ -360,6 +360,17 @@ public class EntranceUIController implements Initializable {
     @FXML
     void openRipAudioCD(ActionEvent event) {
 
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/RipAudio/RipAudio.fxml"));
+            Parent root5 = (Parent) fxmlLoader.load();
+            Stage deviceStage = new Stage();
+            deviceStage.setTitle("Rip Audio CD");
+            deviceStage.setScene(new Scene(root5));
+            deviceStage.show();
+        }
+        catch (Exception e){
+            System.out.println("Cant load new window");
+        }
     }
 
     @FXML

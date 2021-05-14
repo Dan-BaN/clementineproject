@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="869.0" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.playtlistInfo.PlaylistInfoController">
+    <stylesheets>
+        <URL value="@playlistinfo.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="47.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="50.0">
+         <image>
+            <Image url="@../../images/bcac399c750062899608b98739a126d3.png" />
+         </image>
+         <effect>
+            <DropShadow color="#574f4f80" height="62.0" radius="31.25" spread="0.5" width="65.0" />
+         </effect>
+      </ImageView>
+      <Label layoutX="289.0" layoutY="50.0" prefHeight="70.0" prefWidth="350.0" text="Playlist 1" textFill="#574f4f" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="280.0" layoutY="120.0" prefHeight="27.0" prefWidth="89.0" text="Created on :" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="120.0" prefHeight="27.0" prefWidth="76.0" text=" dd/mm/yyyy" textFill="#574f4f" AnchorPane.leftAnchor="379.0" AnchorPane.topAnchor="120.0" />
+      <Label layoutX="280.0" layoutY="162.0" prefHeight="27.0" text="Number of songs :" AnchorPane.leftAnchor="280.0" AnchorPane.topAnchor="162.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="417.0" layoutY="162.0" prefHeight="27.0" text="nn" AnchorPane.leftAnchor="417.0" AnchorPane.topAnchor="162.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="50.0" layoutY="277.0" prefHeight="296.0" prefWidth="803.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="280.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1944.0" prefWidth="803.0">
+               <children>
+                  <TableView prefHeight="1604.0" prefWidth="803.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <columns>
+                      <TableColumn prefWidth="31.0" resizable="false" text="#" />
+                      <TableColumn prefWidth="405.0" text="Song" />
+                        <TableColumn prefWidth="177.0" text="Album" />
+                        <TableColumn prefWidth="114.0" text="Date added" />
+                        <TableColumn prefWidth="69.0" text="Play time" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="765.0" layoutY="237.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="89.0" style="-fx-background-color: #fac31e;" text="Remove song" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="237.0" />
+      <Button layoutX="686.0" layoutY="237.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Add Songs" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="237.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

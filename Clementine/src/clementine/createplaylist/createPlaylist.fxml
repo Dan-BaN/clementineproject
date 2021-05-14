@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.createplaylist.CreatePlaylistController">
+    <stylesheets>
+        <URL value="@createplaylist.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="255.0" layoutY="22.0" text="Create Playlist" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="22.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="79.0" text="Name" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="313.0" AnchorPane.topAnchor="79.0" />
+      <TextField layoutX="255.0" layoutY="103.0" prefHeight="25.0" prefWidth="291.0" style="-fx-border-color: #574f4f;" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="103.0" />
+      <ImageView fx:id="imagev" fitHeight="133.0" fitWidth="156.0" layoutX="92.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="376.21461486816406" AnchorPane.topAnchor="82.0">
+         <effect>
+            <DropShadow color="#574f4f80" height="60.0" radius="30.75" spread="0.5" width="65.0" />
+         </effect>
+         <image>
+            <Image url="@../../images/choose%20image.JPG" />
+         </image>
+      </ImageView>
+      <Label layoutX="255.0" layoutY="139.0" text="Description" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="284.0" AnchorPane.topAnchor="139.0" />
+      <TextField layoutX="255.0" layoutY="163.0" prefHeight="91.0" prefWidth="291.0" style="-fx-border-color: #574f4f;" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="163.0" />
+      <Label layoutX="63.0" layoutY="279.0" text="Song List" AnchorPane.leftAnchor="63.0" AnchorPane.rightAnchor="480.0" AnchorPane.topAnchor="279.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="324.0" layoutY="271.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Save" AnchorPane.rightAnchor="206.0" />
+      <Button layoutX="400.0" layoutY="271.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Add Songs" AnchorPane.rightAnchor="130.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="476.0" layoutY="271.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Remove" AnchorPane.rightAnchor="54.0" />
+      <ScrollPane layoutX="58.0" layoutY="307.0" prefHeight="165.0" prefWidth="488.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="307.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1080.0" prefWidth="1920.0" />
+        </content>
+      </ScrollPane>
+      <Button id="addimg" fx:id="addimg" layoutX="92.0" layoutY="222.0" mnemonicParsing="false" onAction="#addimage" prefHeight="27.0" prefWidth="132.0" style="-fx-background-color: #fac31e;" text="Add image" AnchorPane.leftAnchor="92.0" AnchorPane.topAnchor="222.0" />
+   </children>
+</AnchorPane>
