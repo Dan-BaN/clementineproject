@@ -185,6 +185,8 @@ public class EntranceUIController implements Initializable {
     @FXML
     private MenuItem visualizations;
     
+    @FXML
+    private MenuItem openEqualizer;
     
     //init function
     @Override
@@ -328,6 +330,17 @@ public class EntranceUIController implements Initializable {
     @FXML
     void openEqualizer(ActionEvent event) {
 
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/equalizer/equalizer.fxml"));
+            Parent rootX = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Equalizer");
+            stage.setScene(new Scene(rootX));
+            stage.show();
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
     }
 
     @FXML
