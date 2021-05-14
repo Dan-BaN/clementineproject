@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="824.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.songplayer.songplayerController">
+   <children>
+      <AnchorPane layoutY="-3.0" prefHeight="832.0" prefWidth="541.0" style="-fx-background-color: orange;">
+         <children>
+            <Pane layoutX="6.0" layoutY="17.0" prefHeight="802.0" prefWidth="529.0" style="-fx-background-color: red;">
+               <children>
+                  <ImageView fitHeight="537.0" fitWidth="533.0" layoutX="-2.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/2db47079e7f84dcd5b80b31656d8681d.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="430.0" fitWidth="409.0" layoutX="68.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../Pictures/New%20folder%20(2)/612QjmN623L._SY355_.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="136.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hardwell -" wrappingWidth="489.9093017578125">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <Circle layoutX="262.0" layoutY="283.0" radius="186.0" stroke="BLACK" strokeType="INSIDE" />
+                  <ImageView fitHeight="353.0" fitWidth="353.0" layoutX="85.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/circle-cropped.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="248.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="United We Are">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Text>
+                  <Slider layoutX="35.0" layoutY="551.0" prefHeight="63.0" prefWidth="451.0" value="20.0" />
+                  <Slider layoutX="399.0" layoutY="698.0" prefHeight="63.0" prefWidth="94.0" value="20.0" />
+                  <Text layoutX="17.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-1.20" wrappingWidth="80.17935943603516">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="457.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.20" wrappingWidth="80.17935943603516">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="110.0" fitWidth="104.0" layoutX="207.0" layoutY="622.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/play.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="441.0" layoutY="747.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/speaker.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="78.0" fitWidth="60.0" layoutX="351.0" layoutY="643.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/fast-forward.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="78.0" fitWidth="60.0" layoutX="98.0" layoutY="641.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/fast-forward.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="476.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/share.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="33.0" layoutX="26.0" layoutY="732.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/replay.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="33.0" layoutX="19.0" layoutY="21.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/list_2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

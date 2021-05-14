@@ -1,0 +1,205 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+    
+    
+
+    
+.btnUp{-fx-background-image: url("/images/tharuvi/151845-music-player-icons/png/.png");
+    -fx-background-size: 23px 23px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    padding-left: 5px;
+   
+     
+     
+   
+}
+
+
+.btnUp:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+.btnNew{
+    -fx-background-image: url("/images/tharuvi/151845-music-player-icons/png/up-arrow.png");
+    -fx-background-size: 23px 23px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+  -fx-background-color: transparent;  
+    
+    
+}
+
+
+.btnNew:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+
+
+
+.btnDown {-fx-background-image: url("/images/tharuvi/151845-music-player-icons/png/down-arrow.png");
+          -fx-background-size: 23px 23px;
+          -fx-background-repeat: no-repeat;
+          -fx-background-position: center;
+         -fx-background-color: transparent; 
+          
+}
+
+
+.btnDown:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+
+.btnAdd {-fx-background-image: url("/images/tharuvi/151845-music-player-icons/png/plus.png");
+         -fx-background-size: 23px 23px;
+         -fx-background-repeat: no-repeat;
+         -fx-background-position: center;
+         -fx-background-color: transparent;     
+          padding-top: 5px;
+        
+}
+
+.btnAdd:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+
+.btnCancel {
+             -fx-background-color:#ff8c00;
+             padding-top: 5px;
+}
+.btnCancel:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+
+
+
+.btnNext {-fx-background-image: url("/images/tharuvi/151845-music-player-icons/png/next-1.png");
+           -fx-background-size: 30px 25px;
+           -fx-background-repeat: no-repeat;
+           -fx-background-position: center;
+        -fx-background-color: transparent;  
+          
+}
+.btnNext:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+
+
+
+
+.btnPrev {-fx-background-image: url("/images/tharuvi/151845-music-player-icons/png/back.png");
+          -fx-background-size: 30px 25px;
+          -fx-background-repeat: no-repeat;
+          -fx-background-position: center;
+         -fx-background-color: transparent; 
+         
+}
+.btnPrev:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+
+
+.btnPause {-fx-background-image: url("/images/tharuvi/151845-music-player-icons/png/pause.png");
+           -fx-background-size: 30px 25px;
+           -fx-background-repeat: no-repeat;
+           -fx-background-position: center;
+         -fx-background-color: transparent; 
+           
+
+}
+.btnPause:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+
+.btnClear {
+    /*
+    -fx-graphic: url(images/log2.png)#deb887;
+    -fx-graphic-size:16px 16px;
+    */
+    -fx-background-image: url("/images/tharuvi/151845-music-player-icons/png/cancel.png");
+    -fx-background-size: 23px 23px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent; 
+     padding-top: 10px;
+   
+}
+
+.btnReplay{
+    
+     -fx-background-image: url("/images/tharuvi/1142347.png");
+-fx-background-size: 23px 23px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent; 
+    
+}
+
+.btnshuff{
+    
+     -fx-background-image: url("/images/tharuvi/play_shuffle.png");
+-fx-background-size: 23px 23px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: transparent; 
+    
+}
+
+.btnClear:hover {
+        -fx-background-color:#ffa500;
+        -fx-scale-y: 1.1;
+}
+
+ .bottombar{
+       
+        -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FF6347,#FF4500,#FF6347,#FF4500) !important;
+    }
+    
+  .body-background{
+  
+  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+
+
+}
+
+
+
+.transparant{
+    -fx-background-color:rgba(0,0,0,0);
+}
+
+.search-background{
+    
+    -fx-background-color:#787A8F;
+    -fx-background-radius: 50;
+ -fx-background-color: rgba(0,0,0,0.2) !important;
+}
+
+.textB{
+    -fx-border-color:#ff6347; 
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+    -fx-background-color:rgba(0,0,0,0);
+    -fx-text-fill:white;
+    
+    
+}
+ 
+.slider{
+    -fx-control-inner-background:		#c71585;
+}
+
+
+
+}

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1220.0" styleClass="body-background," xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.QueuesFilesManager.QueueManagerFileController">
+    <stylesheets>
+        <URL value="@queuemanagerfile.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane id="backg" fx:id="backg" layoutX="433.0" layoutY="122.0" prefHeight="507.0" prefWidth="662.0" styleClass="transparant" stylesheets="@queuemanagerfile.css">
+         <children>
+            <Text fill="#fcfcfc" layoutX="37.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Song" wrappingWidth="40.263671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="172.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist" wrappingWidth="40.263671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="308.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration" wrappingWidth="53.263671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="441.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Queue Number" wrappingWidth="100.263671875">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <AnchorPane layoutX="635.0" layoutY="92.0" prefHeight="348.0" prefWidth="81.0">
+               <children>
+                  <Button layoutX="-3.0" layoutY="248.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="70.0" styleClass="btnCancel" stylesheets="@queuemanagerfile.css" text="CLEAR">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnDown" stylesheets="@queuemanagerfile.css" />
+                  <Button layoutX="14.0" layoutY="139.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnAdd" stylesheets="@queuemanagerfile.css" />
+                  <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnClear" stylesheets="@queuemanagerfile.css" wrapText="true" />
+                  <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnNew" stylesheets="@queuemanagerfile.css" />
+               </children>
+            </AnchorPane>
+            <HBox layoutX="29.0" prefHeight="62.0" prefWidth="447.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="36.0" prefWidth="245.0" text="Manage songs Order" textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox layoutX="25.0" layoutY="93.0" prefHeight="389.0" prefWidth="571.0">
+               <children>
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              6">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              7">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="6.0" layoutY="512.0" prefHeight="62.0" prefWidth="200.0" styleClass="bottombar" stylesheets="@queuemanagerfile.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnPrev" stylesheets="@queuemanagerfile.css">
+               <HBox.margin>
+                  <Insets left="70.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnPause" stylesheets="@queuemanagerfile.css">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnNext" stylesheets="@queuemanagerfile.css">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Label alignment="CENTER" prefHeight="62.0" prefWidth="61.0" text="01:04" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <Slider prefHeight="62.0" prefWidth="790.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Slider>
+            <Label alignment="CENTER" prefHeight="62.0" prefWidth="61.0" text="02:15" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="44.0" styleClass="btnshuff" stylesheets="@queuemanagerfile.css" wrapText="true">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="44.0" styleClass="btnReplay" stylesheets="@queuemanagerfile.css">
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children></HBox>
+      <ImageView fitHeight="62.0" fitWidth="74.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/Clementine-Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="26.0" text="Clementine">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="556.0" layoutY="40.0" prefHeight="39.0" prefWidth="321.0" styleClass="search-background" stylesheets="@queuemanagerfile.css">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="33.0" opacity="0.83" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/tharuvi/white-search-icon-transparent-background-1.jpg" />
+               </image>
+            </ImageView>
+            <TextField styleClass="transparant" stylesheets="@../queueManager/queuemanager.css" text="search for Song,Artist..........">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></TextField>
+         </children>
+      </HBox>
+      <ImageView fitHeight="216.0" fitWidth="219.0" layoutX="133.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow />
+         </effect>
+         <image>
+            <Image url="@../../images/tharuvi/download.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="mylabel" alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" layoutY="505.0" prefHeight="17.0" prefWidth="126.0" text="Arcade" />
+   </children>
+</AnchorPane>
