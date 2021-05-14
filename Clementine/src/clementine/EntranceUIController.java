@@ -159,7 +159,7 @@ public class EntranceUIController implements Initializable {
     private MenuItem fullLibraryRescan;
 
     @FXML
-    private MenuItem preferences;
+    private MenuItem settings;
 
     @FXML
     private MenuItem checkUpdates;
@@ -331,7 +331,18 @@ public class EntranceUIController implements Initializable {
     }
 
     @FXML
-    void openPreferences(ActionEvent event) {
+    void openSettings(ActionEvent event) {
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/settings/settings.fxml"));
+            Parent rootX = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Settings");
+            stage.setScene(new Scene(rootX));
+            stage.show();
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
 
     }
 
