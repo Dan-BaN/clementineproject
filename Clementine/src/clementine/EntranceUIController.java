@@ -310,20 +310,7 @@ public class EntranceUIController implements Initializable {
 
     }
 
-    @FXML
-    void openCoverManager(ActionEvent event){
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/files/filesPage.fxml"));
-            Parent root5 = (Parent) fxmlLoader.load();
-            Stage deviceStage = new Stage();
-            deviceStage.setTitle("Equlaizer");
-            deviceStage.setScene(new Scene(root5));
-            deviceStage.show();
-        }
-        catch (Exception e){
-            System.out.println("Cant load new window");
-        }
-    }
+    
 
     @FXML
     void openEqualizer(ActionEvent event) {
@@ -337,7 +324,24 @@ public class EntranceUIController implements Initializable {
 
     @FXML
     void openQueueManager(ActionEvent event) {
-
+        
+         
+      try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/QueuesFilesManager/QueueManagerFile.fxml"));
+            Parent root5 = (Parent) fxmlLoader.load();
+           
+            Stage deviceStage = new Stage();
+            deviceStage.setTitle("Queue Manager");
+            deviceStage.setScene(new Scene(root5));
+            deviceStage.show();
+        }
+        catch (Exception e){
+            
+              e.printStackTrace();
+            //System.out.println("cant open");
+        }
+        
+        
     }
 
     @FXML
@@ -382,4 +386,48 @@ public class EntranceUIController implements Initializable {
     void openaboutQT(ActionEvent event) {
 
     }
+    
+    @FXML
+    void openCoverManager(ActionEvent event) {
+        
+         
+      try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/covermanager/FXMLCoverManagerDoc.fxml"));
+            Parent root5 = (Parent) fxmlLoader.load();
+           
+            Stage deviceStage = new Stage();
+            deviceStage.setTitle("cover Manager");
+            deviceStage.setScene(new Scene(root5));
+            deviceStage.show();
+        }
+        catch (Exception e){
+            
+            e.printStackTrace();
+        }
 }
+
+        
+     @FXML
+    void edittracks(ActionEvent event) {
+        
+         
+      try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/tracks/EditTrackFXMLDoc.fxml"));
+            Parent root5 = (Parent) fxmlLoader.load();
+           
+            Stage deviceStage = new Stage();
+            deviceStage.setTitle("Edit Track");
+            deviceStage.setScene(new Scene(root5));
+            deviceStage.show();
+        }
+        catch (Exception e){
+            
+            e.printStackTrace();
+        }
+        
+        
+    }
+    
+    
+}
+

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1146.0" stylesheets="@EditTrackStyles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.tracks.EditTrackFXMLDocController">
+   <content>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="body-background" stylesheets="@EditTrackStyles.css">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="body-background" stylesheets="@EditTrackStyles.css">
+               <children>
+                  <Text fill="WHITE" layoutX="76.0" layoutY="844.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments" wrappingWidth="87.04296875" AnchorPane.bottomAnchor="191.486328125" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="1056.95703125" AnchorPane.topAnchor="828.892578125">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="78.0" layoutY="653.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lyrics" wrappingWidth="42.04296875" AnchorPane.bottomAnchor="382.486328125" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="1099.95703125" AnchorPane.topAnchor="637.892578125">
+                     <font>
+                        <Font name="Calibri" size="17.0" />
+                     </font>
+                  </Text>
+                  <VBox layoutX="199.0" layoutY="126.0" prefHeight="392.0" prefWidth="295.0">
+                     <children>
+                        <TextField />
+                        <TextField>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="72.0" layoutY="126.0" prefHeight="494.0" prefWidth="87.0">
+                     <children>
+                        <Text fill="#fffdfd" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="70.44140625">
+                           <font>
+                              <Font name="Calibri" size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist" wrappingWidth="42.04296875">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="45.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Album" wrappingWidth="97.04296875">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Album Artist" wrappingWidth="99.44140625">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Composer" wrappingWidth="86.44140625">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Performer" wrappingWidth="83.44140625">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="824.0" layoutY="118.0" prefHeight="392.0" prefWidth="295.0">
+                     <children>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <TextField>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <ChoiceBox fx:id="mychoicebox" prefHeight="43.0" prefWidth="295.0" styleClass="drop" stylesheets="@EditTrackStyles.css">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="mychoicebox2" prefHeight="43.0" prefWidth="295.0" styleClass="drop" stylesheets="@EditTrackStyles.css">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ChoiceBox>
+                        <ChoiceBox fx:id="mychoicebox3" prefHeight="43.0" prefWidth="295.0" styleClass="drop" stylesheets="@EditTrackStyles.css">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ChoiceBox>
+                        <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="351.0" styleClass="btn-clr" stylesheets="@EditTrackStyles.css" text="Auto Fill">
+                           <cursor>
+                              <Cursor fx:constant="DEFAULT" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="728.0" layoutY="137.0" prefHeight="494.0" prefWidth="70.0" styleClass="txt" stylesheets="@EditTrackStyles.css">
+                     <children>
+                        <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="Grouping" wrappingWidth="70.44140625">
+                           <font>
+                              <Font name="Calibri" size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre" wrappingWidth="68.04296875">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Track" wrappingWidth="42.04296875">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Disk" wrappingWidth="42.04296875">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt" text="Year" wrappingWidth="42.04296875">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <HBox layoutX="199.0" layoutY="923.0" prefHeight="68.0" prefWidth="924.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="56.0" prefWidth="446.0" styleClass="btn-clr" text="Save">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Button fx:id="discardBtn" mnemonicParsing="false" prefHeight="56.0" prefWidth="446.0" styleClass="btn-clr" stylesheets="@EditTrackStyles.css" text="Discard">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <TextArea layoutX="199.0" layoutY="557.0" prefHeight="196.0" prefWidth="924.0" styleClass="drop" />
+                  <TextArea layoutX="199.0" layoutY="790.0" prefHeight="97.0" prefWidth="924.0" styleClass="drop" />
+                  <HBox layoutX="72.0" layoutY="39.0" prefHeight="67.0" prefWidth="477.0">
+                     <children>
+                        <Label prefHeight="48.0" prefWidth="368.0" text="Edit Tracks Information" textFill="#656060">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Comments" wrappingWidth="87.04296875">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Lyrics" wrappingWidth="42.04296875">
+               <font>
+                  <Font name="Calibri" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </content>
+   <styleClass>
+      <String fx:value="scroll-pane &gt; .viewport" />
+      <String fx:value="scroll-pane" />
+   </styleClass>
+</ScrollPane>

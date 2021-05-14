@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 6, 2021, 2:55:26 AM
+    Author     : THARUVI
+*/
+
+
+.body-background{
+  
+ /* -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+*/
+
+-fx-background-color:transparent;
+
+}
+
+
+.text-field {
+/*#f8f8ff*/
+-fx-background-color:#f0f8ff;
+-fx-text-fill:Black; 
+-fx-font-size:16;
+-fx-margin-top:30px;
+-fx-border-color:#cd5c5c; 
+/* -fx-border-radius: 15;
+*/-fx-border-width: 3;
+-fx-background-radius: 3px, 3px, 2px, 1px;
+
+    }
+.text-field:focused {
+  }
+  
+  .drop
+  {
+     -fx-background-color:#f0f8ff;
+-fx-text-fill:Black; 
+-fx-font-size:16;
+-fx-margin-top:30px;
+-fx-border-color:#cd5c5c; 
+/* -fx-border-radius: 15;
+*/-fx-border-width: 3; 
+     -fx-background-radius: 3px, 3px, 2px, 1px;
+  }
+  
+  .btn-clr{
+      
+    
+  
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-alignment: CENTER;
+     -fx-background-color: #cd5c5c;
+     -fx-font-size: 20;
+     -fx-font-family: "Calibri";
+    -fx-text-fill: white;
+ 
+  }
+  
+  
+  #btn-clr:hover {
+  
+  
+  -fx-background-color: #b22222;
+
+}
+
+#btn-clr:pressed {
+ -fx-background-color: #b22222;
+}
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}  
+
+
+.scroll-pane {
+   -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+}
