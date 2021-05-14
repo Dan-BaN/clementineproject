@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.importPlaylists.ImportPlaylistsController">
+    <stylesheets>
+        <URL value="@importplaylists.css" />
+    </stylesheets>
+   <children>
+      <Text layoutX="60.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Spoitify Playlists" wrappingWidth="289.6708984375" AnchorPane.bottomAnchor="523.9765625" AnchorPane.leftAnchor="59.6708984375" AnchorPane.rightAnchor="650.3291015625" AnchorPane.topAnchor="44.0234375">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <CheckBox layoutX="85.0" layoutY="157.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="85.0" layoutY="205.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="85.0" layoutY="253.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="85.0" layoutY="300.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="85.0" layoutY="344.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="85.0" layoutY="395.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="85.0" layoutY="446.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </CheckBox>
+      <Button layoutX="172.0" layoutY="507.0" mnemonicParsing="false" text="Import Playlists" />
+   </children>
+</AnchorPane>

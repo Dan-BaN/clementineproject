@@ -1,0 +1,20 @@
+.body-background{
+
+  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+
+}
+
+#presets{
+   -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+}
+
+#presets:hover{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+    -fx-opacity: 5;
+}
+
+/*#presets:active{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+    opacity: 5;
+
+}*/

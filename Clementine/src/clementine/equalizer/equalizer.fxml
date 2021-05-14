@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.equalizer.EqualizerController">
+    <stylesheets>
+        <URL value="@equalizer.css" />
+    </stylesheets>
+   <children>
+      <Slider layoutX="88.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="201.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="269.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="340.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="408.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="478.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="553.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="631.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="709.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="781.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="865.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Separator layoutX="157.0" layoutY="106.0" orientation="VERTICAL" prefHeight="353.0" prefWidth="2.0" />
+      <Separator layoutX="980.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="607.0" prefWidth="6.0" />
+      <Label layoutX="1052.0" layoutY="46.0" prefHeight="35.0" prefWidth="88.0" text="Presets">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button id="presets" layoutX="1020.0" layoutY="125.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="presets" layoutX="1020.0" layoutY="179.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="presets" layoutX="1020.0" layoutY="231.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="presets" layoutX="1020.0" layoutY="287.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="presets" layoutX="1020.0" layoutY="339.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="presets" layoutX="1020.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="presets" layoutX="1020.0" layoutY="444.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="presets" layoutX="1018.0" layoutY="495.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

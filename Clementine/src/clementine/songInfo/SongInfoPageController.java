@@ -5,9 +5,16 @@
  */
 package clementine.songInfo;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
+import java.util.Iterator;
 import java.util.ResourceBundle;
+import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextArea;
 
 /**
  * FXML Controller class
@@ -16,9 +23,21 @@ import javafx.fxml.Initializable;
  */
 public class SongInfoPageController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+    public void saveToText(){
+        
+    }
+    
+    public void fileWriter(File savePath, TextArea textArea) {
+        try {
+            BufferedWriter bf = new BufferedWriter(new FileWriter(savePath));
+            bf.write(textArea.getText());
+            bf.flush();
+            bf.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

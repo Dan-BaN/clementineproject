@@ -7,7 +7,11 @@ package clementine.internet;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -17,7 +21,17 @@ import javafx.fxml.Initializable;
 public class InternetPageController implements Initializable {
 
     public void goToLogin(){
-        System.out.println("Clicked");
+        try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/internetLogin/internetLogin.fxml"));
+            Parent rootX = (Parent) fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Virtualization");
+            stage.setScene(new Scene(rootX));
+            stage.show();
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
     }
     
     @Override
