@@ -192,6 +192,14 @@ public class EntranceUIController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        try{
+            Parent fxml = FXMLLoader.load(getClass().getResource("/clementine/library/libraryPage.fxml"));
+            contentArea.getChildren().removeAll();
+            contentArea.getChildren().setAll(fxml);
+        }
+        catch(Exception ex){
+            ex.printStackTrace();
+        }
         
     }
     
@@ -264,6 +272,8 @@ public class EntranceUIController implements Initializable {
             ex.printStackTrace();
         }
     }
+    
+    
 
     @FXML
     void playlist(ActionEvent event) throws IOException {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clementine.transcodeMusic;
+package clementine.visualizations;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author ASUS
  */
-public class TranscodeMusicController implements Initializable {
+public class VisualizationsController implements Initializable {
 
     /**
      * Initializes the controller class.

@@ -18,10 +18,7 @@ and open the template in the editor.
 
 .button:active{
      -fx-background-color:#FFA213;
-
 }
-
-
 
 
 
@@ -35,7 +32,8 @@ and open the template in the editor.
 #filesButton:hover{
     -fx-background-color:#FFA213;
 
-}#playlistButton:hover{
+}
+#playlistButton:hover{
     -fx-background-color:#FFA213;
 
 }#internetButton:hover{

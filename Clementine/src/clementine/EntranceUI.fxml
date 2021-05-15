@@ -10,10 +10,9 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.EntranceUIController">
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.EntranceUIController">
    <children>
       <Pane fx:id="contentArea" layoutX="-14.0" layoutY="51.0" prefHeight="576.0" prefWidth="1076.0" style="-fx-background-color: #c1dbd9;" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
          <children>
@@ -25,25 +24,9 @@
          </children></Pane>
       <VBox prefHeight="631.0" prefWidth="206.0" style="-fx-background-color: #F6DE4B;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#search" prefHeight="50.0" prefWidth="206.0" text="Search">
-               <VBox.margin>
-                  <Insets bottom="10.0" top="5.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Button>
             <Button fx:id="libraryButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#library" prefHeight="50.0" prefWidth="206.0" text="Library">
                <VBox.margin>
-                  <Insets bottom="10.0" top="5.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Button>
-            <Button fx:id="filesButton" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#files" prefHeight="50.0" prefWidth="206.0" text="Files">
-               <VBox.margin>
-                  <Insets bottom="10.0" top="5.0" />
+                  <Insets bottom="10.0" top="70.0" />
                </VBox.margin>
                <font>
                   <Font size="20.0" />
@@ -73,7 +56,6 @@
                   <Font size="20.0" />
                </font>
             </Button>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffc336" height="23.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="124.0" />
             <Button fx:id="songInfoButton" layoutX="10.0" layoutY="420.0" mnemonicParsing="false" onAction="#songInfo" prefHeight="50.0" prefWidth="206.0" text="Song Info">
                <VBox.margin>
                   <Insets bottom="10.0" top="5.0" />

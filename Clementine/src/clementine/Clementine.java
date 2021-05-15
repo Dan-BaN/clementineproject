@@ -42,6 +42,7 @@ public class Clementine extends Application {
             Image icon = new Image("/images/Clementine-Logo.png");
             
             stage.getIcons().add(icon);
+            stage.setResizable(false);
             stage.setTitle("Clementine");
 
             stage.setScene(scene);
