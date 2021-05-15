@@ -33,7 +33,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="441.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Queue Number" wrappingWidth="100.263671875">
+            <Text fill="WHITE" layoutX="454.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Track ID" wrappingWidth="100.263671875">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -46,7 +46,7 @@
                      </cursor>
                   </Button>
                   <Button layoutX="14.0" layoutY="80.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnDown" stylesheets="@queuemanagerfile.css" />
-                  <Button layoutX="14.0" layoutY="139.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnAdd" stylesheets="@queuemanagerfile.css" />
+                  <Button fx:id="fetchBtn" layoutX="14.0" layoutY="139.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="31.0" styleClass="btnAdd" stylesheets="@queuemanagerfile.css" />
                   <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnClear" stylesheets="@queuemanagerfile.css" wrapText="true" />
                   <Button layoutX="16.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" styleClass="btnNew" stylesheets="@queuemanagerfile.css" />
                </children>
@@ -62,7 +62,7 @@
             </HBox>
             <VBox layoutX="25.0" layoutY="93.0" prefHeight="389.0" prefWidth="571.0">
                <children>
-                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              1">
+                  <TextField fx:id="source" onDragDetected="#handleDragDetection" onDragDone="#HandleDragdone" prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              536">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -70,7 +70,7 @@
                         <Insets />
                      </VBox.margin>
                   </TextField>
-                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              2">
+                  <TextField fx:id="target" onDragDropped="#HandleTextdrop" onDragOver="#HandleTextDragover" prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="Demons                   Imagine Dragons              1.  80                              678">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -78,7 +78,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              3">
+                  <TextField fx:id="source2" onDragDetected="#handleDragDetection2" onDragDone="#HandleDragdone2" prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="Justin Bieber            confident                          1.901                              234">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -86,7 +86,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              4">
+                  <TextField fx:id="target2" onDragDropped="#HandleTextdrop2" onDragOver="#HandleTextDragover2" prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="Perfect                     Ed Sheeran                        2.001                              757">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -94,7 +94,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              5">
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="Bruno Mars             Grenade                             1.881                              234">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -102,7 +102,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              6">
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="Chris Brown             with you                             2.00                               246">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -110,7 +110,7 @@
                         <Insets top="15.0" />
                      </VBox.margin>
                   </TextField>
-                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              7">
+                  <TextField prefHeight="36.0" prefWidth="530.0" styleClass="textB" stylesheets="@queuemanagerfile.css" text="I Don't Care             Ed Sheeran                        2.001                              237">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -178,7 +178,7 @@
                   <Image url="@../../images/tharuvi/white-search-icon-transparent-background-1.jpg" />
                </image>
             </ImageView>
-            <TextField styleClass="transparant" stylesheets="@../queueManager/queuemanager.css" text="search for Song,Artist..........">
+            <TextField styleClass="transparant" stylesheets="@../queueManager/queuemanager.css">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -187,7 +187,7 @@
                </HBox.margin></TextField>
          </children>
       </HBox>
-      <ImageView fitHeight="216.0" fitWidth="219.0" layoutX="133.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="216.0" fitWidth="219.0" layoutX="97.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
          <effect>
             <DropShadow />
          </effect>
@@ -195,6 +195,71 @@
             <Image url="@../../images/tharuvi/download.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="mylabel" alignment="CENTER" contentDisplay="CENTER" layoutX="178.0" layoutY="505.0" prefHeight="17.0" prefWidth="126.0" text="Arcade" />
+      <Label fx:id="mylabel" alignment="CENTER" contentDisplay="CENTER" layoutX="142.0" layoutY="507.0" prefHeight="17.0" prefWidth="126.0" text="Arcade" />
+      <Text fill="#fcfcfc" layoutX="394.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order" wrappingWidth="40.263671875">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <VBox layoutX="387.0" layoutY="216.0" prefHeight="348.0" prefWidth="55.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="55.0" text="1" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="55.0" text="2" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="55.0" text="3" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="55.0" text="4" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="55.0" text="5" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="55.0" text="6" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="55.0" text="7" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

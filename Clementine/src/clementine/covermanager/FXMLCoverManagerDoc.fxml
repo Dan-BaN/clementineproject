@@ -162,7 +162,7 @@
                   </ImageView>
                </children>
             </HBox>
-            <HBox layoutX="396.0" layoutY="334.0" prefHeight="50.0" prefWidth="779.0">
+            <HBox layoutX="396.0" layoutY="334.0" prefHeight="50.0" prefWidth="816.0">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Halo (Beyonce)" textAlignment="CENTER" wrappingWidth="134.13671875" />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Impossible -James Arthur" textAlignment="CENTER" wrappingWidth="119.138671875">
@@ -172,12 +172,12 @@
                   </Text>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Can't Help Falling In Love" textAlignment="CENTER" wrappingWidth="121.13671875">
                      <HBox.margin>
-                        <Insets left="90.0" />
+                        <Insets left="120.0" />
                      </HBox.margin>
                   </Text>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Can't Help Falling In Love" textAlignment="CENTER" wrappingWidth="121.13671875">
                      <HBox.margin>
-                        <Insets left="90.0" />
+                        <Insets left="100.0" />
                      </HBox.margin>
                   </Text>
                </children>
@@ -227,7 +227,7 @@
                   </ImageView>
                </children>
             </HBox>
-            <HBox layoutX="377.0" layoutY="620.0" prefHeight="59.0" prefWidth="783.0">
+            <HBox layoutX="377.0" layoutY="620.0" prefHeight="59.0" prefWidth="831.0">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Paradise (Cold Play)" textAlignment="CENTER" wrappingWidth="77.853515625">
                      <HBox.margin>
@@ -236,22 +236,22 @@
                   </Text>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="      Arcade(Duncan Laurence)" textAlignment="CENTER" wrappingWidth="112.46875">
                      <HBox.margin>
-                        <Insets left="100.0" />
+                        <Insets left="120.0" />
                      </HBox.margin>
                   </Text>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Memories(Maroon 5)" textAlignment="CENTER" wrappingWidth="89.283203125">
                      <HBox.margin>
-                        <Insets left="100.0" />
+                        <Insets left="120.0" />
                      </HBox.margin>
                   </Text>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Memories(Maroon 5)" textAlignment="CENTER" wrappingWidth="89.283203125">
                      <HBox.margin>
-                        <Insets left="130.0" />
+                        <Insets left="150.0" />
                      </HBox.margin>
                   </Text>
                </children>
             </HBox>
-            <HBox layoutX="470.0" layoutY="53.0" prefHeight="38.0" prefWidth="258.0" styleClass="search-background" stylesheets="@coverstyles.css">
+            <HBox layoutX="496.0" layoutY="53.0" prefHeight="38.0" prefWidth="258.0" styleClass="search-background" stylesheets="@coverstyles.css">
                <children>
                   <ImageView fitHeight="38.0" fitWidth="39.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -261,10 +261,18 @@
                         <Insets left="50.0" />
                      </HBox.margin>
                   </ImageView>
-                  <Label contentDisplay="CENTER" prefHeight="38.0" prefWidth="87.0" text="Search Songs" />
+                  <TextField styleClass="transparant" stylesheets="@../queueManager/queuemanager.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </TextField>
                </children>
             </HBox>
-            <Button fx:id="fetchBtn" layoutX="761.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@coverstyles.css" text="Fetch Missing covers" />
+            <Button fx:id="fetchBtn" layoutX="803.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@coverstyles.css" text="Export Covers" />
+            <Button fx:id="fetchBtn1" layoutX="962.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@coverstyles.css" text="Fetch Missing covers" />
          </children>
       </AnchorPane>
    </content>
