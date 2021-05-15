@@ -414,14 +414,16 @@ public class EntranceUIController implements Initializable {
     void openVisualizations(ActionEvent event) {
 
         try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/visualizations/transcodeMusic.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/visualizations/visualizations.fxml"));
             Parent root5 = (Parent) fxmlLoader.load();
             Stage deviceStage = new Stage();
-            deviceStage.setTitle("Transcode Music");
+            deviceStage.setTitle("Visualization");
             deviceStage.setScene(new Scene(root5));
+
             deviceStage.show();
         }
         catch (Exception e){
+            e.printStackTrace();
             System.out.println("Cant load new window");
         }
         
