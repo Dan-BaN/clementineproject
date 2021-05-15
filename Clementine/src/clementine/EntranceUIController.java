@@ -427,7 +427,7 @@ public class EntranceUIController implements Initializable {
         
          
       try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/covermanager/FXMLCoverManagerDoc.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/covertesting/covermangerNew.fxml"));
             Parent root5 = (Parent) fxmlLoader.load();
            
             Stage deviceStage = new Stage();

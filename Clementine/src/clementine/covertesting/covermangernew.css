@@ -1,0 +1,79 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 6, 2021, 2:01:32 AM
+    Author     : THARUVI
+*/
+
+.body-background{
+  
+  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+
+
+}
+
+.search-background{
+    
+    -fx-background-color:#787A8F;
+    -fx-background-radius: 50;
+ -fx-background-color: rgba(0,0,0,0.2) !important;
+}
+
+.btnfetch {
+             -fx-background-color:#C0C0C0;
+             padding-top: 5px;
+             -fx-background-radius: 50;
+}
+.btnfetch:hover {
+        -fx-background-color:ff6347;
+        -fx-scale-y: 1.1;
+}
+
+.vbox_style {
+    -fx-border-color: transparent;
+    -fx-border-insets: 5;
+    -fx-border-width: 2;
+    -fx-border-style: line;
+ }
+ 
+ .textB{
+    -fx-border-color:#222; 
+    -fx-border-radius: 5;
+    -fx-border-width: 2;
+ 
+    
+    
+}
+
+.transparant{
+    -fx-background-color:rgba(0,0,0,0);
+}
+
+
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}  
+
+
+.scroll-pane {
+   -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+}
+
+
+.newbtn {
+             
+             -fx-border-radius: 5;
+    -fx-border-width: 2;
+  -fx-background-color: transparent;
+             -fx-border-color: black;
+}

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="fetchBtn" layoutX="544.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Export Covers" />
+      <HBox layoutX="271.0" layoutY="68.0" prefHeight="38.0" prefWidth="258.0" styleClass="search-background" stylesheets="@../covermanager/coverstyles.css">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="39.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/tharuvi/white-search-icon-transparent-background-1.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label contentDisplay="CENTER" prefHeight="38.0" prefWidth="87.0" text="Search Songs" />
+         </children>
+      </HBox>
+      <HBox layoutX="72.0" layoutY="637.0" prefHeight="59.0" prefWidth="783.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Paradise " textAlignment="CENTER" wrappingWidth="77.853515625">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="446.0" prefHeight="174.0" prefWidth="884.0">
+         <children>
+            <ImageView fitHeight="167.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../../images/tharuvi/der.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets right="60.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="85.0" layoutY="370.0" prefHeight="50.0" prefWidth="779.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Halo " textAlignment="CENTER" wrappingWidth="134.13671875" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Impossible " textAlignment="CENTER" wrappingWidth="119.138671875">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Can't Help Falling In Love" textAlignment="CENTER" wrappingWidth="121.13671875">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Falling In Love" textAlignment="CENTER" wrappingWidth="121.13671875">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <HBox layoutX="72.0" layoutY="186.0" prefHeight="184.0" prefWidth="869.0">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../../images/tharuvi/download.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets right="60.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="166.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../../images/tharuvi/d6zmn1t-647cb406-3c00-4b22-9312-cae8cea55254.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="60.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="164.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../../images/tharuvi/Bruno_Mars_-_Doo-Wops_&amp;_Hooligans.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="60.0" />
+               </HBox.margin>
+            </ImageView>
+            <ImageView fitHeight="166.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <image>
+                  <Image url="@../../images/tharuvi/albumart.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Button fx:id="fetchBtn1" layoutX="695.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Fetch Missing covers" />
+   </children>
+</AnchorPane>
