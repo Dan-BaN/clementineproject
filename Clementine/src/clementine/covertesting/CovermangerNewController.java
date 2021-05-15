@@ -19,6 +19,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
@@ -92,6 +93,17 @@ public class CovermangerNewController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+    
+      @FXML
+    private void fetch(ActionEvent event){
+        
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Alert");
+                alert.setHeaderText("Fetching Cover unsuccessful!");
+                //alert.setContentText("Press ok to continue");
+                alert.showAndWait();     
+     }
+    
     
     
     @FXML

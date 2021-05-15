@@ -81,5 +81,19 @@
       </HBox>
       <HBox layoutX="72.0" layoutY="128.0" prefHeight="242.0" prefWidth="869.0" />
       <Button fx:id="fetchBtn1" layoutX="539.0" layoutY="68.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Export Covers" />
+      <VBox layoutX="95.0" layoutY="67.0" prefHeight="59.0" prefWidth="134.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="134.0" text="Total Albums : 3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="29.0" prefWidth="134.0" text="Without Covers: 1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

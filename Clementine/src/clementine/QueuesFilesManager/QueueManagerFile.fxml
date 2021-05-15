@@ -178,7 +178,7 @@
                   <Image url="@../../images/tharuvi/white-search-icon-transparent-background-1.jpg" />
                </image>
             </ImageView>
-            <TextField styleClass="transparant" stylesheets="@../queueManager/queuemanager.css">
+            <TextField styleClass="transparant" stylesheets="@../queueManager/queuemanager.css" text="Enter Songs Here">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -195,7 +195,10 @@
             <Image url="@../../images/tharuvi/download.jpg" />
          </image>
       </ImageView>
-      <Label fx:id="mylabel" alignment="CENTER" contentDisplay="CENTER" layoutX="142.0" layoutY="507.0" prefHeight="17.0" prefWidth="126.0" text="Arcade" />
+      <Label fx:id="mylabel" alignment="CENTER" contentDisplay="CENTER" layoutX="142.0" layoutY="507.0" prefHeight="17.0" prefWidth="126.0" text="Arcade">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
       <Text fill="#fcfcfc" layoutX="394.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order" wrappingWidth="40.263671875">
          <font>
             <Font name="System Bold" size="12.0" />

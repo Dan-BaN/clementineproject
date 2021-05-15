@@ -10,10 +10,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="fetchBtn" layoutX="663.0" layoutY="68.0" mnemonicParsing="false"  prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Fetch Missing covers" />
+      <Button fx:id="fetchBtn" layoutX="663.0" layoutY="68.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Fetch Missing covers" />
       <HBox layoutX="346.0" layoutY="67.0" prefHeight="38.0" prefWidth="258.0" styleClass="search-background" stylesheets="@../covermanager/coverstyles.css">
          <children>
             <ImageView fitHeight="38.0" fitWidth="39.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
@@ -129,7 +128,7 @@
                   <Insets right="60.0" />
                </HBox.margin>
             </ImageView>
-            <ImageView fitHeight="166.0" fitWidth="164.0"  pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="166.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
                <effect>
                   <DropShadow />
                </effect>
@@ -151,7 +150,7 @@
                   <Insets right="60.0" />
                </HBox.margin>
             </ImageView>
-            <ImageView fitHeight="166.0" fitWidth="164.0"  pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="166.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
                <effect>
                   <DropShadow />
                </effect>
@@ -164,5 +163,19 @@
             </ImageView>
          </children>
       </HBox>
+      <VBox layoutX="136.0" layoutY="67.0" prefHeight="59.0" prefWidth="134.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="134.0" text="Total Albums :  8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="29.0" prefWidth="134.0" text="Without Covers: 3">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
