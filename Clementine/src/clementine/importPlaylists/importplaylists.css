@@ -7,4 +7,14 @@
 
 }
 
+#import{
+    -fx-border-color:black;
+    -fx-border-width: 2 2 2 2;
+    -fx-background-color : #FF4500;
+}
 
+#import{
+    -fx-border-color:black;
+    -fx-border-width: 2 2 2 2;
+    -fx-background-color : #FF8C00;
+}

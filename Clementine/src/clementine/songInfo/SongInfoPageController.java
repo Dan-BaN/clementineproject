@@ -9,10 +9,13 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.net.URL;
 import java.util.Iterator;
 import java.util.ResourceBundle;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextArea;
 
@@ -23,21 +26,22 @@ import javafx.scene.control.TextArea;
  */
 public class SongInfoPageController implements Initializable {
 
-    public void saveToText(){
-        
-    }
+    @FXML
+    private TextArea lyricsArea;
     
-    public void fileWriter(File savePath, TextArea textArea) {
-        try {
-            BufferedWriter bf = new BufferedWriter(new FileWriter(savePath));
-            bf.write(textArea.getText());
-            bf.flush();
-            bf.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+
+    @FXML
+    void saveToText(ActionEvent event) {
+       
+        
+        for (String Text : lyricsArea.getText().split("\\n")){
+            
+            
+//            Writer.write(""+Text+"");
         }
 
     }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

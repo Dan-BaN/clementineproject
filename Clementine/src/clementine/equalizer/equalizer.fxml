@@ -13,63 +13,78 @@
         <URL value="@equalizer.css" />
     </stylesheets>
    <children>
-      <Slider layoutX="88.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="201.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="269.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="340.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="408.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="478.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="553.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="631.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="709.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="781.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
-      <Slider layoutX="865.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="81.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="210.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="286.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="359.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="435.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="503.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="576.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="654.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="733.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="813.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
+      <Slider layoutX="886.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
       <Separator layoutX="157.0" layoutY="106.0" orientation="VERTICAL" prefHeight="353.0" prefWidth="2.0" />
-      <Separator layoutX="980.0" layoutY="-2.0" orientation="VERTICAL" prefHeight="607.0" prefWidth="6.0" />
-      <Label layoutX="1052.0" layoutY="46.0" prefHeight="35.0" prefWidth="88.0" text="Presets">
+      <Separator layoutX="941.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="607.0" prefWidth="6.0" />
+      <Label layoutX="59.0" layoutY="405.0" prefHeight="21.0" prefWidth="62.0" text="Volume">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <Button id="presets" layoutX="1020.0" layoutY="125.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="presets" layoutX="1020.0" layoutY="179.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="presets" layoutX="1020.0" layoutY="231.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="presets" layoutX="1020.0" layoutY="287.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="presets" layoutX="1020.0" layoutY="339.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="presets" layoutX="1020.0" layoutY="400.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="presets" layoutX="1020.0" layoutY="444.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
-      <Button id="presets" layoutX="1018.0" layoutY="495.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="157.0" stylesheets="@equalizer.css" text="Rock">
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </Button>
+      <Label layoutX="210.0" layoutY="405.0" prefHeight="21.0" prefWidth="18.0" text="60">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="278.0" layoutY="405.0" prefHeight="21.0" prefWidth="34.0" text="170">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="405.0" prefHeight="21.0" prefWidth="34.0" text="310">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="405.0" prefHeight="21.0" prefWidth="27.0" text="600">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="499.0" layoutY="405.0" prefHeight="21.0" prefWidth="27.0" text="1K">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="572.0" layoutY="405.0" prefHeight="21.0" prefWidth="27.0" text="3K">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="650.0" layoutY="405.0" prefHeight="21.0" prefWidth="27.0" text="6K">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="725.0" layoutY="405.0" prefHeight="21.0" prefWidth="34.0" text="12K">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="805.0" layoutY="405.0" prefHeight="21.0" prefWidth="34.0" text="14K">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="878.0" layoutY="405.0" prefHeight="21.0" prefWidth="34.0" text="16K">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="961.0" layoutY="-1.0" prefHeight="607.0" prefWidth="239.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="646.0" prefWidth="191.0" />
+        </content>
+      </ScrollPane>
    </children>
 </AnchorPane>
