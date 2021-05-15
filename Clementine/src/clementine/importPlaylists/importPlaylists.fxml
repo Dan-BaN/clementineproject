@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.importPlaylists.ImportPlaylistsController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="994.0" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.importPlaylists.ImportPlaylistsController">
     <stylesheets>
         <URL value="@importplaylists.css" />
     </stylesheets>
@@ -24,36 +24,87 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="85.0" layoutY="205.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+      <CheckBox layoutX="85.0" layoutY="205.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Warm Fuzzy feeling">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="85.0" layoutY="253.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+      <CheckBox layoutX="85.0" layoutY="253.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Queen Greatest hits">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="85.0" layoutY="300.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+      <CheckBox layoutX="85.0" layoutY="300.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Sad 90's">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="85.0" layoutY="344.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+      <CheckBox layoutX="85.0" layoutY="344.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Nostalagic Rock">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="85.0" layoutY="395.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+      <CheckBox layoutX="85.0" layoutY="395.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Greatest Rock Ballads">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </CheckBox>
-      <CheckBox layoutX="85.0" layoutY="446.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Chilled Roots">
+      <CheckBox layoutX="85.0" layoutY="446.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="264.0" stylesheets="@importplaylists.css" text="Flightless Bird">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </CheckBox>
-      <Button layoutX="172.0" layoutY="507.0" mnemonicParsing="false" text="Import Playlists" />
+      <Button id="import" layoutX="172.0" layoutY="507.0" mnemonicParsing="false" text="Import Playlists">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Pane layoutX="506.0" prefHeight="600.0" prefWidth="494.0">
+         <children>
+            <Text layoutX="29.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flightless Bird" wrappingWidth="289.6708984375">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1  Flightless Bird :- Iron &amp; Wine" wrappingWidth="289.6708984375">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2  The Night We Met:- Lord huron" wrappingWidth="289.6708984375">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3  Afterglow :- Ed Sheeran" wrappingWidth="354.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4  Falling :- Harry Styles" wrappingWidth="310.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5  Cherry Wine :- Hozier" wrappingWidth="264.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6  All I want :- Kodaline" wrappingWidth="325.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="42.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7  Afire Love :- Ed sheeran" wrappingWidth="264.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Separator layoutX="476.0" orientation="VERTICAL" prefHeight="600.0" prefWidth="0.0" />
    </children>
 </AnchorPane>

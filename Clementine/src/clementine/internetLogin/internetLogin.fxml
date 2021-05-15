@@ -18,14 +18,14 @@
             <Image url="@../../images/2111624.png" />
          </image>
       </ImageView>
-      <TextField fx:id="uname" layoutX="249.0" layoutY="307.0" prefHeight="31.0" prefWidth="352.0" AnchorPane.bottomAnchor="262.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="199.0" AnchorPane.topAnchor="307.0" />
-      <TextField fx:id="password" layoutX="249.0" layoutY="375.0" prefHeight="31.0" prefWidth="352.0" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="199.0" AnchorPane.topAnchor="375.0" />
-      <Button fx:id="login" layoutX="304.0" layoutY="451.0" mnemonicParsing="false" onMouseClicked="#goToSpotifyplaylists" prefHeight="31.0" prefWidth="192.0" style="-fx-background-color: green;" text="Login" AnchorPane.bottomAnchor="118.0" AnchorPane.leftAnchor="304.0" AnchorPane.rightAnchor="304.0" AnchorPane.topAnchor="451.0">
+      <TextField fx:id="uname" layoutX="249.0" layoutY="307.0" prefHeight="31.0" prefWidth="352.0" />
+      <TextField fx:id="password" layoutX="249.0" layoutY="375.0" prefHeight="31.0" prefWidth="352.0" />
+      <Button fx:id="login" layoutX="304.0" layoutY="451.0" mnemonicParsing="false" onMouseClicked="#goToSpotifyplaylists" prefHeight="31.0" prefWidth="192.0" style="-fx-background-color: green;" text="Login">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Label layoutX="116.0" layoutY="312.0" prefHeight="21.0" prefWidth="88.0" text="Username" AnchorPane.bottomAnchor="267.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="596.0" AnchorPane.topAnchor="312.0" />
-      <Label layoutX="116.0" layoutY="380.0" prefHeight="21.0" prefWidth="88.0" text="Password" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="116.0" AnchorPane.rightAnchor="596.0" AnchorPane.topAnchor="380.0" />
+      <Label layoutX="116.0" layoutY="312.0" prefHeight="21.0" prefWidth="88.0" text="Username" />
+      <Label layoutX="116.0" layoutY="380.0" prefHeight="21.0" prefWidth="88.0" text="Password" />
    </children>
 </AnchorPane>
