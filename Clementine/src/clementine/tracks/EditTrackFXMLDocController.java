@@ -47,7 +47,7 @@ public class EditTrackFXMLDocController implements Initializable {
     }
    */
      
-       @FXML
+    @FXML
     private ChoiceBox<String> mychoicebox4;
     private String[] genre = {"Pop","Rock","Country Music","Jazz","Heavy Metal","Blues","Classical"};
     
