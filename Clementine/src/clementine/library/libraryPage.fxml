@@ -1,126 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="700.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.library.LibraryPageController">
+<Pane fx:id="contentArea" maxHeight="642.0" maxWidth="1121.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="1121.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.library.LibraryPageController">
    <children>
-      <SplitPane layoutX="2.0" layoutY="1.0" prefHeight="800.0" prefWidth="1500.0">
-        <items>
-          <AnchorPane minHeight="472.0" minWidth="966.0" prefHeight="472.0" prefWidth="966.0" style="-fx-background-color: orange;" styleClass="body-background" stylesheets="@librarypage.css">
-               <children>
-                  <Text layoutX="24.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library">
-                     <font>
-                        <Font name="Book Antiqua Bold" size="60.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="93.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artists">
-                     <font>
-                        <Font name="Imprint MT Shadow" size="30.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="326.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Albums">
-                     <font>
-                        <Font name="Imprint MT Shadow" size="30.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="526.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Songs">
-                     <font>
-                        <Font name="Imprint MT Shadow" size="30.0" />
-                     </font>
-                  </Text>
-                  <ImageView fitHeight="114.0" fitWidth="120.0" layoutX="61.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true" />
-                  <Pane layoutX="81.0" layoutY="94.0" prefHeight="241.0" prefWidth="383.0" style="-fx-border-color: black;">
+      <ScrollPane cache="true" cacheHint="SCALE" hbarPolicy="NEVER" prefHeight="640.0" prefWidth="1125.0">
+         <content>
+            <SplitPane prefHeight="800.0" prefWidth="1500.0">
+              <items>
+                <AnchorPane minHeight="472.0" minWidth="966.0" prefHeight="799.0" prefWidth="1150.0" style="-fx-background-color: orange;" styleClass="body-background">
                      <children>
-                        <ImageView fitHeight="237.0" fitWidth="380.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../images/music-wallpaper.jpg" />
-                           </image>
-                        </ImageView>
-                        <Text layoutX="35.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liked Songs">
+                        <Text layoutX="24.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library">
                            <font>
-                              <Font name="System Bold" size="30.0" />
+                              <Font name="Book Antiqua Bold" size="41.0" />
                            </font>
                         </Text>
-                        <Text layoutX="119.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 liked songs">
+                        <ImageView fitHeight="114.0" fitWidth="120.0" layoutX="61.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true" />
+                        <Pane layoutX="81.0" layoutY="94.0" prefHeight="241.0" prefWidth="383.0" style="-fx-border-color: black;">
+                           <children>
+                              <ImageView fitHeight="237.0" fitWidth="380.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/music-wallpaper.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text layoutX="35.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liked Songs">
+                                 <font>
+                                    <Font name="System Bold" size="30.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="119.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 liked songs">
+                                 <font>
+                                    <Font name="System Bold Italic" size="30.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fx:id="action" fitHeight="88.0" fitWidth="66.0" layoutX="283.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/video-play-button.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Text layoutX="491.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recently Played">
                            <font>
-                              <Font name="System Bold Italic" size="30.0" />
+                              <Font name="Papyrus" size="30.0" />
                            </font>
                         </Text>
-                        <ImageView fitHeight="88.0" fitWidth="66.0" layoutX="283.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                        <Pane layoutX="763.0" layoutY="111.0" prefHeight="213.0" prefWidth="207.0" />
+                        <Pane layoutX="479.0" layoutY="92.0" prefHeight="241.0" prefWidth="582.0" style="-fx-border-color: black;" styleClass="border" stylesheets="@librarypage.css">
+                           <children>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/20151231221410.jpg" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="216.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/artworks-000532910172-0ddv2a-t500x500_2.jpg" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="410.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/46424376_300x300.jpg" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                              </ImageView>
+                              <ImageView fitHeight="88.0" fitWidth="100.0" layoutX="496.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" />
+                              <ImageView fitHeight="88.0" fitWidth="84.0" layoutX="517.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../images/video-play-button.png" />
+                                 </image>
+                              </ImageView>
+                             
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="464.0" preserveRatio="true">
                            <image>
-                              <Image url="@../../images/video-play-button.png" />
+                              <Image url="@../../images/artworks-000282544118-c5gshr-t500x500.jpg" />
                            </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
                         </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="295.0" layoutY="462.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/artworks-000631066504-9c4pnb-t500x500.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="500.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/apps.22785.13510798882873389.58b33862-cbf0-446a-a3fd-b7e45c7624c9.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="702.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/da420b0b4c2afb408bef22d231440e69.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="903.0" layoutY="455.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/Idontwannabeyouanymore-Billie-Eilish-Cover--English-2018-20180617144647-500x500.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="299.0" layoutY="697.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/tharuvi/artworks-000573697037-24qzqb-t500x500.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="504.0" layoutY="691.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/tharuvi/116a5320010227a3f258d893d06dabf0.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="90.0" layoutY="695.0" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/tharuvi/41NuZAd1NDL._SY355_.jpg" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </ImageView>
+                        <Pane layoutX="81.0" layoutY="336.0" prefHeight="98.0" prefWidth="837.0">
+                           <children>
+                              <Label fx:id="Artists" alignment="CENTER" cache="true" contentDisplay="CENTER" graphicTextGap="1000.0" layoutX="44.0" layoutY="35.0" lineSpacing="10.0" pickOnBounds="false" prefHeight="42.0" prefWidth="145.0" styleClass="btnfetch" stylesheets="@librarypage.css" text="Artists">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="albums" alignment="CENTER" graphicTextGap="1000.0" layoutX="274.0" layoutY="35.0" prefHeight="42.0" prefWidth="145.0" styleClass="btnfetch" stylesheets="@librarypage.css" text="Albums">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="playlist" alignment="CENTER" layoutX="482.0" layoutY="31.0" prefHeight="42.0" prefWidth="145.0" styleClass="btnfetch" stylesheets="@librarypage.css" text="Playlist">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="artist" layoutX="44.0" layoutY="31.0" mnemonicParsing="false" onAction="#artistbtn" opacity="0.0" prefHeight="55.0" prefWidth="155.0" styleClass="btnfetch" stylesheets="@librarypage.css" text="Button" />
+                              <Button fx:id="albumbtn" layoutX="269.0" layoutY="28.0" mnemonicParsing="false" onAction="#albumbtn" opacity="0.0" prefHeight="55.0" prefWidth="155.0" styleClass="btnfetch" stylesheets="@librarypage.css" text="Button" />
+                              <Button fx:id="playlistbtn" layoutX="482.0" layoutY="24.0" mnemonicParsing="false" onAction="#playlistbtn" opacity="0.0" prefHeight="55.0" prefWidth="155.0" styleClass="btnfetch" stylesheets="@librarypage.css" text="Button" />
+                                                           
+                           </children>
+                        </Pane>
+                      
+                        <Label fx:id="playlist1" alignment="CENTER" layoutX="759.0" layoutY="367.0" prefHeight="42.0" prefWidth="145.0" style="-fx-background-color: orange;" styleClass="btnfetch" stylesheets="@librarypage.css" text="Songs">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        
                      </children>
-                  </Pane>
-                  <Text layoutX="491.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recently Played">
-                     <font>
-                        <Font name="Papyrus" size="30.0" />
-                     </font>
-                  </Text>
-                  <Pane layoutX="763.0" layoutY="111.0" prefHeight="213.0" prefWidth="207.0" />
-                  <Pane layoutX="479.0" layoutY="92.0" prefHeight="241.0" prefWidth="582.0" style="-fx-border-color: black;" styleClass="border" stylesheets="@librarypage.css">
-                     <children>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../images/20151231221410.jpg" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="216.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../images/artworks-000532910172-0ddv2a-t500x500_2.jpg" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="410.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../images/46424376_300x300.jpg" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="88.0" fitWidth="100.0" layoutX="496.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" />
-                        <ImageView fitHeight="88.0" fitWidth="84.0" layoutX="517.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../images/video-play-button.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/artworks-000282544118-c5gshr-t500x500.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="295.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/artworks-000631066504-9c4pnb-t500x500.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="500.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/apps.22785.13510798882873389.58b33862-cbf0-446a-a3fd-b7e45c7624c9.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="702.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/da420b0b4c2afb408bef22d231440e69.jpg" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="903.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../images/Idontwannabeyouanymore-Billie-Eilish-Cover--English-2018-20180617144647-500x500.jpg" />
-                     </image>
-                  </ImageView>
-                  <Line endX="56.20001220703125" layoutX="567.0" layoutY="389.0" startX="-55.79998779296875" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" />
-                  
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
+                     <stylesheets>
+                        <URL value="@play-button.css" />
+                        <URL value="@librarypage.css" />
+                     </stylesheets>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </content>
+      </ScrollPane>
    </children>
 </Pane>

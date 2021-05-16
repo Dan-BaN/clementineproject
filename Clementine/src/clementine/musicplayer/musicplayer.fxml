@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,13 +10,13 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="824.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.songplayer.songplayerController">
+<AnchorPane id="AnchorPane" prefHeight="749.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.musicplayer.MusicplayerController">
    <children>
-      <AnchorPane layoutY="-3.0" prefHeight="832.0" prefWidth="541.0" style="-fx-background-color: orange;">
+      <AnchorPane layoutY="-3.0" prefHeight="563.0" prefWidth="459.0" style="-fx-background-color: orange;">
          <children>
-            <Pane layoutX="6.0" layoutY="17.0" prefHeight="802.0" prefWidth="529.0" style="-fx-background-color: red;">
+            <Pane layoutX="1.0" layoutY="-47.0" prefHeight="807.0" prefWidth="549.0" style="-fx-background-color: red;">
                <children>
-                  <ImageView fitHeight="537.0" fitWidth="533.0" layoutX="-2.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="547.0" fitWidth="551.0" layoutX="1.0" layoutY="264.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/2db47079e7f84dcd5b80b31656d8681d.png" />
                      </image>
@@ -25,7 +26,7 @@
                         <Image url="@../../../../../../../Pictures/New%20folder%20(2)/612QjmN623L._SY355_.jpg" />
                      </image>
                   </ImageView>
-                  <Text layoutX="136.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hardwell -" wrappingWidth="489.9093017578125">
+                  <Text layoutX="137.0" layoutY="523.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hardwell -" wrappingWidth="489.9093017578125">
                      <font>
                         <Font size="23.0" />
                      </font>
@@ -41,8 +42,8 @@
                         <Font size="23.0" />
                      </font>
                   </Text>
-                  <Slider layoutX="35.0" layoutY="551.0" prefHeight="63.0" prefWidth="451.0" value="20.0" />
-                  <Slider layoutX="399.0" layoutY="698.0" prefHeight="63.0" prefWidth="94.0" value="20.0" />
+                  <Slider fx:id="slider" layoutX="35.0" layoutY="551.0" prefHeight="63.0" prefWidth="451.0" value="20.0" />
+                
                   <Text layoutX="17.0" layoutY="610.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-1.20" wrappingWidth="80.17935943603516">
                      <font>
                         <Font size="17.0" />
@@ -73,7 +74,7 @@
                         <Image url="@../../images/fast-forward.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="476.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="35.0" fitWidth="45.0" layoutX="476.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/share.png" />
                      </image>
@@ -83,11 +84,30 @@
                         <Image url="@../../images/replay.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="45.0" fitWidth="33.0" layoutX="19.0" layoutY="21.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="45.0" fitWidth="33.0" layoutX="19.0" layoutY="68.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../images/list_2.png" />
                      </image>
                   </ImageView>
+                  <ImageView fitHeight="54.0" fitWidth="71.0" layoutX="234.0" layoutY="740.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/heart.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="45.0" fitWidth="34.0" layoutX="453.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/5050-200.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="83.0" layoutY="644.0" mnemonicParsing="false" opacity="0.0" prefHeight="47.0" prefWidth="89.0" />
+                  <Button layoutX="339.0" layoutY="649.0" mnemonicParsing="false" opacity="0.0" prefHeight="47.0" prefWidth="89.0" />
+                  <Button fx:id="playlist" layoutX="6.0" layoutY="61.0" mnemonicParsing="false" onAction="#playlist" opacity="0.0" prefHeight="45.0" prefWidth="67.0" text="Button" />
+                  <Button fx:id="share" layoutX="458.0" layoutY="65.0" mnemonicParsing="false" onAction="#share" opacity="0.0" prefHeight="45.0" prefWidth="67.0" text="Button" />
+                  <Button fx:id="play" layoutX="214.0" layoutY="634.0" mnemonicParsing="false" onAction="#play" opacity="0.0" prefHeight="78.0" prefWidth="92.0" />
+                  <Button layoutX="442.0" layoutY="487.0" mnemonicParsing="false" opacity="0.0" prefHeight="47.0" prefWidth="50.0" />
+                  <Button layoutX="16.0" layoutY="723.0" mnemonicParsing="false" opacity="0.0" prefHeight="47.0" prefWidth="50.0" />
+                  <Button fx:id="tolyrics" layoutX="89.0" layoutY="107.0" mnemonicParsing="false" onAction="#lyrics" opacity="0.0" prefHeight="353.0" prefWidth="353.0" text="Button" />
+                  <Slider layoutX="388.0" layoutY="725.0" />
                </children>
             </Pane>
          </children>

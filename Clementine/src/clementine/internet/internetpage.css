@@ -1,7 +1,7 @@
 
 .body-background{
 
-  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+  -fx-background-color:transparent;
 
 }
 

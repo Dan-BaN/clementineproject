@@ -16,11 +16,11 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="600.0" maxWidth="1050.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1049.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.devices.DevicesPageController">
+<Pane maxHeight="642.0" maxWidth="1124.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="1121.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.devices.DevicesPageController">
    <children>
-      <SplitPane layoutX="2.0" layoutY="1.0" maxHeight="600.0" maxWidth="1050.0" prefHeight="595.0" prefWidth="1045.0">
+      <SplitPane layoutX="2.0" layoutY="1.0" maxHeight="642.0" maxWidth="1119.0" prefHeight="642.0" prefWidth="1119.0">
         <items>
-          <AnchorPane maxHeight="600.0" maxWidth="1050.0" minHeight="500.0" minWidth="700.0" prefHeight="801.0" prefWidth="700.0" style="-fx-background-color: orange;" styleClass="body" stylesheets="@devicespage.css">
+          <AnchorPane maxHeight="640.0" maxWidth="1120.0" minHeight="500.0" minWidth="700.0" prefHeight="640.0" prefWidth="1120.0" style="-fx-background-color: orange;" styleClass="body-background" stylesheets="@../library/librarypage.css">
                <children>
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7a900" height="79.0" layoutX="492.0" layoutY="436.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
                   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="71.0" layoutX="-1.0" layoutY="181.0" mouseTransparent="true" stroke="BLACK" strokeType="INSIDE" width="490.0" />
@@ -77,8 +77,10 @@
                   <Text fill="#f4f4f4" layoutX="124.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Device Name DV4433-03" />
                   <Text fill="WHITE" layoutX="356.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online" />
                   <Circle fill="#f20000" layoutX="343.0" layoutY="434.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: green;" />
-                  <Button layoutX="278.0" layoutY="35.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: grey;" text="Add Device" textOverrun="LEADING_WORD_ELLIPSIS">
-                     <font>
+                  
+                  <Button fx:id="fetchBtn" layoutX="278.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="188.0" style="-fx-background-color: grey;" text="Add Device" textOverrun="LEADING_WORD_ELLIPSIS">
+                    
+                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
@@ -142,7 +144,8 @@
                   <Text layoutX="807.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Smiths – There Is a Light " wrappingWidth="141.00000000000006" />
                   <VBox layoutX="788.0" layoutY="149.0" prefHeight="263.0" prefWidth="202.0" style="-fx-border-color: orange;" />
                   <Text fill="#fc0000" layoutX="795.0" layoutY="426.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drag and Drop the songs and press sync" wrappingWidth="187.99999999999994" />
-                  <Button layoutX="859.0" layoutY="454.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="64.0" text="SYNC" />
+                  <Button fx:id="syncbtn" layoutX="859.0" layoutY="454.0" mnemonicParsing="false" prefHeight="53.0" onAction="#synbutton" prefWidth="64.0" text="SYNC" />
+                  <Button fx:id="backupbtn" layoutX="556.0" layoutY="113.0" mnemonicParsing="false" opacity="0.0" onAction="#backupbutton"  prefHeight="41.0" prefWidth="125.0" />
                </children>
             </AnchorPane>
         </items>

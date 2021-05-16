@@ -6,13 +6,18 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.EntranceUIController">
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.EntranceUIController">
    <children>
       <Pane fx:id="contentArea" layoutX="-14.0" layoutY="51.0" prefHeight="576.0" prefWidth="1076.0" style="-fx-background-color: #c1dbd9;" AnchorPane.bottomAnchor="113.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
          <children>
@@ -56,6 +61,10 @@
                   <Font size="20.0" />
                </font>
             </Button>
+            <Pane prefHeight="7.0" prefWidth="186.0" style="-fx-background-color: orange;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin></Pane>
             <Button fx:id="songInfoButton" layoutX="10.0" layoutY="420.0" mnemonicParsing="false" onAction="#songInfo" prefHeight="50.0" prefWidth="206.0" text="Song Info">
                <VBox.margin>
                   <Insets bottom="10.0" top="5.0" />
@@ -143,7 +152,57 @@
       </MenuBar>
       <HBox alignment="CENTER" layoutX="563.0" layoutY="606.0" prefHeight="114.0" prefWidth="1280.0" style="-fx-background-color: #f6c04b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label alignment="CENTER" text="\@danuka" />
+            <Pane prefHeight="54.0" prefWidth="1310.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="51.0" layoutX="173.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/pause.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="41.0" layoutX="109.0" layoutY="31.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fast-forward.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="251.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/fast-forward.png" />
+                     </image>
+                  </ImageView>
+                  <Slider layoutX="379.0" layoutY="45.0" prefHeight="44.0" prefWidth="516.0" />
+                  <ImageView fitHeight="89.0" fitWidth="103.0" layoutX="966.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/20151231221410.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="57.0" fitWidth="41.0" layoutX="1196.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/heart.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="392.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hardwel - United We Are">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+                  
+                  <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="885.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/replay.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="1121.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/5050-200.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="368.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-1.20" />
+                  <Text layoutX="872.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3.40" />
+               </children>
+            </Pane>
          </children>
       </HBox>
    </children>

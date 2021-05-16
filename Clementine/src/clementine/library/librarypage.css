@@ -2,6 +2,28 @@
  * Empty Stylesheet file.
  */
 
-.mainFxmlClass {
+ .btnfetch {
+  -fx-background-color: lightblueblue;
+  -fx-border-bottom-color: black
+  
+}
+
+.body-background{
+  
+  -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#FFA500,#FF8C00,#F4A460,#FF7F50,#FFFAFA) !important;
+
 
 }
+
+.btnfetch {
+             -fx-background-color:#C0C0C0;
+             padding-top: 5px;
+             -fx-background-radius: 50;
+             -fx-border-color: black ;
+             -fx-border-radius: 50;
+}
+.btnfetch:hover {
+        -fx-background-color:ff6347;
+        -fx-scale-y: 1.1;
+}
+
