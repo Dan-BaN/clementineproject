@@ -64,7 +64,7 @@
         </content>
       </ScrollPane>
       <Button layoutX="765.0" layoutY="237.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="89.0" style="-fx-background-color: #fac31e;" text="Remove song" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="237.0" />
-      <Button layoutX="686.0" layoutY="237.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Add Songs" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="237.0">
+      <Button fx:id="addsong" layoutX="686.0" layoutY="237.0" mnemonicParsing="false" onAction="#addso" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Add Songs" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="237.0">
          <font>
             <Font size="11.0" />
          </font>

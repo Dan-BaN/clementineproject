@@ -54,7 +54,7 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </CheckBox>
-      <Button id="import" layoutX="172.0" layoutY="507.0" mnemonicParsing="false" text="Import Playlists">
+      <Button id="import" layoutX="172.0" layoutY="507.0" mnemonicParsing="false" onMouseClicked="#importPlaylist" text="Import Playlists">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>

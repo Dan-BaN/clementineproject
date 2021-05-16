@@ -18,7 +18,10 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.stage.Window;
@@ -43,6 +46,15 @@ public class CreatePlaylistController implements Initializable {
     private Button addimg;
     private Window primaryStage;
     
+    @FXML
+    private Button addsonf;
+    private Window newwindow;
+    
+    @FXML
+    private Button savebtn;
+    
+    @FXML
+    private ImageView imagev; 
     
     
    
@@ -51,7 +63,48 @@ public class CreatePlaylistController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
+    
+    @FXML
+    public void save(){
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Create playlist");
+                alert.setHeaderText("Saving playlist....");
+                alert.setContentText("Playlist created succesfully!");
+                alert.showAndWait();
+    
+    
+    
+    }
+    
+
+    @FXML
+    private void addsong(ActionEvent event) throws IOException {
+        filechoose = new FileChooser();
+         
+         filechoose.getExtensionFilters().addAll(
+         
+                 
+                 new ExtensionFilter("All files","*.*")
+         );
+         
+                
+                 addsonf.setOnAction(e ->{
+             file = filechoose.showOpenDialog(newwindow);
+             if(file != null){
+                try {
+                    
+                     desktop.open(file);
+                 } catch (IOException ex) {
+                     java.util.logging.Logger.getLogger(CreatePlaylistController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+                 }
+             }
+             
+         });
+    
+    
+    }
+    
     
      @FXML
     private void addimage(ActionEvent event) throws IOException {
@@ -72,6 +125,9 @@ public class CreatePlaylistController implements Initializable {
              file = filechoose.showOpenDialog(primaryStage);
              if(file != null){
                 try {
+                    /*String imagepath = file.getPath();
+                    Image image = new Image(imagepath);
+                    imagev.setImage(image);*/
                      desktop.open(file);
                  } catch (IOException ex) {
                      java.util.logging.Logger.getLogger(CreatePlaylistController.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);

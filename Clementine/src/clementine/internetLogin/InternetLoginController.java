@@ -57,8 +57,7 @@ public class InternetLoginController implements Initializable {
         else{
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Message Here...");
-                alert.setHeaderText("Look, an Information Dialog");
-                alert.setContentText("I have a great message for you!");
+                alert.setContentText("Inavalid Login Details");
                 alert.showAndWait();
         }
         

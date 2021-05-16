@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.equalizer.EqualizerController">
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="1218.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.equalizer.EqualizerController">
     <stylesheets>
         <URL value="@equalizer.css" />
     </stylesheets>
@@ -25,7 +25,6 @@
       <Slider layoutX="813.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
       <Slider layoutX="886.0" layoutY="167.0" orientation="VERTICAL" prefHeight="218.0" prefWidth="18.0" />
       <Separator layoutX="157.0" layoutY="106.0" orientation="VERTICAL" prefHeight="353.0" prefWidth="2.0" />
-      <Separator layoutX="941.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="607.0" prefWidth="6.0" />
       <Label layoutX="59.0" layoutY="405.0" prefHeight="21.0" prefWidth="62.0" text="Volume">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -81,10 +80,38 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <ScrollPane layoutX="961.0" layoutY="-1.0" prefHeight="607.0" prefWidth="239.0">
+      <ScrollPane hbarPolicy="NEVER" layoutX="971.0" layoutY="166.0" prefHeight="241.0" prefWidth="229.0">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="646.0" prefWidth="191.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="283.0" prefWidth="218.0" styleClass="body-background">
+               <children>
+                  <ListView fx:id="presetList" prefHeight="284.0" prefWidth="214.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ListView>
+               </children></AnchorPane>
         </content>
       </ScrollPane>
+      <GridPane layoutX="967.0" layoutY="445.0" prefHeight="51.0" prefWidth="229.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="164.0" minWidth="10.0" prefWidth="125.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.0" minWidth="10.0" prefWidth="104.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="presetInput" onAction="#addPreset" />
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addPreset" prefHeight="31.0" prefWidth="104.0" style="-fx-background-color: fac31e;" text="Add Preset" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label layoutX="1055.0" layoutY="112.0" prefHeight="21.0" prefWidth="62.0" text="Presets">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

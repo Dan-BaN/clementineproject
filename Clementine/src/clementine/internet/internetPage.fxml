@@ -14,7 +14,7 @@
    <children>
       <ScrollPane hbarPolicy="NEVER" prefHeight="609.0" prefWidth="1130.0" styleClass="body-background" stylesheets="@internetpage.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="617.0" prefWidth="1132.0" styleClass="body-background" stylesheets="@internetpage.css">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="617.0" prefWidth="1132.0" style="-fx-background-color: orange;" stylesheets="@internetpage.css">
                <children>
                   <ImageView id="#Logos" fitHeight="136.0" fitWidth="142.0" layoutX="521.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="366.6" AnchorPane.leftAnchor="521.0" AnchorPane.rightAnchor="475.0" AnchorPane.topAnchor="115.0">
                      <image>
