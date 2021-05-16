@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" styleClass="body-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.createplaylist.CreatePlaylistController">
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" styleClass="body-background" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.createplaylist.CreatePlaylistController">
     <stylesheets>
         <URL value="@createplaylist.css" />
     </stylesheets>
@@ -37,8 +38,8 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="324.0" layoutY="271.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Save" AnchorPane.rightAnchor="206.0" />
-      <Button layoutX="400.0" layoutY="271.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Add Songs" AnchorPane.rightAnchor="130.0">
+      <Button fx:id="savebtn" layoutX="324.0" layoutY="271.0" mnemonicParsing="false" onAction="#save" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Save" AnchorPane.rightAnchor="206.0" />
+      <Button fx:id="addsonf" layoutX="400.0" layoutY="271.0" mnemonicParsing="false" onAction="#addsong" prefHeight="27.0" prefWidth="70.0" style="-fx-background-color: #fac31e;" text="Add Songs" AnchorPane.rightAnchor="130.0">
          <font>
             <Font size="11.0" />
          </font>
