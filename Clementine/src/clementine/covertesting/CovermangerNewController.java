@@ -10,6 +10,7 @@ import java.awt.Desktop;
 import static java.awt.SystemColor.desktop;
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
@@ -92,7 +93,21 @@ public class CovermangerNewController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    } 
+    
+    
+       @FXML
+    private void downlaodCover(){
+        
+    try {
+        Desktop.getDesktop().browse(new URL("https://www.billboard.com/photos/6715351/best-album-covers-of-all-time").toURI());
+    } catch (IOException e) {
+        e.printStackTrace();
+    } catch (URISyntaxException e) {
+        e.printStackTrace();
+    }
+        
+    }
     
       @FXML
     private void fetch(ActionEvent event){

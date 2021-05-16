@@ -196,6 +196,13 @@
                   </Label>
                </children>
             </VBox>
+            <Button layoutX="872.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#downlaodCover" prefHeight="38.0" prefWidth="112.0" styleClass="dwn" text="Download ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect></Button>
          </children>
       </Pane>
       <VBox layoutX="100.0" prefHeight="720.0" prefWidth="206.0" styleClass="transparant">

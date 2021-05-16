@@ -12,8 +12,8 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="fetchBtn" layoutX="544.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Export Covers" />
-      <HBox layoutX="271.0" layoutY="68.0" prefHeight="38.0" prefWidth="258.0" styleClass="search-background" stylesheets="@../covermanager/coverstyles.css">
+      <Button fx:id="fetchBtn" layoutX="507.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Export Covers" />
+      <HBox layoutX="242.0" layoutY="68.0" prefHeight="38.0" prefWidth="258.0" styleClass="search-background" stylesheets="@../covermanager/coverstyles.css">
          <children>
             <ImageView fitHeight="38.0" fitWidth="39.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -118,7 +118,7 @@
             </ImageView>
          </children>
       </HBox>
-      <Button fx:id="fetchBtn1" layoutX="695.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Fetch Missing covers" />
+      <Button fx:id="fetchBtn1" layoutX="660.0" layoutY="69.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" styleClass="btnfetch" stylesheets="@../covermanager/coverstyles.css" text="Fetch Missing covers" />
       <VBox layoutX="72.0" layoutY="68.0" prefHeight="59.0" prefWidth="134.0">
          <children>
             <Label prefHeight="30.0" prefWidth="134.0" text="Total Albums : 5">
@@ -133,5 +133,6 @@
             </Label>
          </children>
       </VBox>
+      <Button layoutX="829.0" layoutY="14.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #DC143C;" text="Download" />
    </children>
 </AnchorPane>
