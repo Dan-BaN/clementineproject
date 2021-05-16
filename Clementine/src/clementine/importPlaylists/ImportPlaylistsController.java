@@ -8,6 +8,7 @@ package clementine.importPlaylists;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 
 /**
  * FXML Controller class
@@ -16,9 +17,12 @@ import javafx.fxml.Initializable;
  */
 public class ImportPlaylistsController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+    public void importPlaylist(){
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Message Here...");
+                alert.setContentText("Playlist imported");
+                alert.showAndWait();
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

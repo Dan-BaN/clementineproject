@@ -12,18 +12,18 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="578.0" prefWidth="993.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.songInfo.SongInfoPageController">
+<AnchorPane id="AnchorPane" prefHeight="631.0" prefWidth="1101.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clementine.songInfo.SongInfoPageController">
     <stylesheets>
         <URL value="@songinfopage.css" />
     </stylesheets>
    <children>
-      <ScrollPane hbarPolicy="NEVER" layoutX="489.0" prefHeight="578.0" prefWidth="504.0" styleClass="body-background" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="489.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane hbarPolicy="NEVER" layoutX="567.0" prefHeight="631.0" prefWidth="536.0">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="830.0" prefWidth="516.0" styleClass="body-background">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="830.0" prefWidth="516.0" style="-fx-background-color: orange;">
                <children>
-                  <TextArea fx:id="lyricsArea" editable="false" layoutX="46.0" layoutY="45.0" prefHeight="830.0" prefWidth="379.0" styleClass="body-background" text="Wise men say&#10;Only fools rush in&#10;But I can't help falling in love with you&#10;&#10;Shall I stay?&#10;Would it be a sin&#10;If I can't help falling in love with you?&#10;&#10;Like a river flows&#10;Surely to the sea&#10;Darling, so it goes&#10;Some things are meant to be&#10;&#10;Take my hand&#10;Take my whole life too&#10;For I can't help falling in love with you&#10;&#10;Like a river flows&#10;Surely to the sea&#10;Darling, so it goes&#10;Some things are meant to be&#10;&#10;Take my hand&#10;Take my whole life too&#10;For I can't help falling in love with you&#10;For I can't help falling in love with you" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="137.0" AnchorPane.topAnchor="0.0">
+                  <TextArea fx:id="lyricsArea" editable="false" layoutX="46.0" layoutY="45.0" prefHeight="830.0" prefWidth="489.0" text="Wise men say&#10;Only fools rush in&#10;But I can't help falling in love with you&#10;&#10;Shall I stay?&#10;Would it be a sin&#10;If I can't help falling in love with you?&#10;&#10;Like a river flows&#10;Surely to the sea&#10;Darling, so it goes&#10;Some things are meant to be&#10;&#10;Take my hand&#10;Take my whole life too&#10;For I can't help falling in love with you&#10;&#10;Like a river flows&#10;Surely to the sea&#10;Darling, so it goes&#10;Some things are meant to be&#10;&#10;Take my hand&#10;Take my whole life too&#10;For I can't help falling in love with you&#10;For I can't help falling in love with you" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="0.0">
                      <font>
-                        <Font name="Bodoni MT" size="20.0" />
+                        <Font name="Calibri Bold" size="20.0" />
                      </font>
                   </TextArea>
                   <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="440.0" layoutY="14.0" onMouseClicked="#saveToText" AnchorPane.bottomAnchor="789.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="14.0">
@@ -38,14 +38,26 @@
             </AnchorPane>
          </content>
       </ScrollPane>
-      <ScrollPane hbarPolicy="NEVER" prefHeight="578.0" prefWidth="489.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="504.0" AnchorPane.topAnchor="0.0">
+      <ScrollPane hbarPolicy="NEVER" prefHeight="631.0" prefWidth="567.0">
          <content>
-            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="823.0" prefWidth="481.0" styleClass="body-background">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="823.0" prefWidth="550.0" style="-fx-background-color: orange;">
                <children>
-                  <Label layoutX="137.0" layoutY="446.0" text="Blue Hawaii" AnchorPane.bottomAnchor="356.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="446.0" />
-                  <Label layoutX="137.0" layoutY="410.0" text="Elvis Presley" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="410.0" />
-                  <Label layoutX="46.0" layoutY="441.0" prefHeight="31.0" prefWidth="47.0" text="Album" AnchorPane.bottomAnchor="351.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="388.0" AnchorPane.topAnchor="441.0" />
-                  <Label layoutX="46.0" layoutY="410.0" text="Artist" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="410.0" />
+                  <Label layoutX="137.0" layoutY="446.0" text="Blue Hawaii" AnchorPane.bottomAnchor="356.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="174.0" AnchorPane.topAnchor="446.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="137.0" layoutY="410.0" text="Elvis Presley" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="264.0" AnchorPane.topAnchor="410.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="46.0" layoutY="441.0" prefHeight="31.0" prefWidth="47.0" text="Album" AnchorPane.bottomAnchor="351.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="388.0" AnchorPane.topAnchor="441.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label layoutX="46.0" layoutY="410.0" text="Artist" AnchorPane.bottomAnchor="392.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="410.0">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
                   <Label layoutX="37.0" layoutY="25.0" prefHeight="31.0" prefWidth="211.0" text="Can't Help Falling In Love" AnchorPane.bottomAnchor="767.0" AnchorPane.leftAnchor="37.0" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="25.0">
                      <effect>
                         <Lighting bumpInput="$null">
@@ -55,7 +67,7 @@
                         </Lighting>
                      </effect>
                      <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
                   <ImageView fitHeight="300.0" fitWidth="300.0" layoutX="55.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="449.0" AnchorPane.leftAnchor="54.154937744140625" AnchorPane.rightAnchor="126.84506225585938" AnchorPane.topAnchor="74.0">
@@ -66,7 +78,18 @@
                         <Image url="@../../images/612QjmN623L._SY355_.jpg" />
                      </image>
                   </ImageView>
-                  <Text layoutX="46.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Can't Help Falling in Love&quot; is a song recorded by American singer Elvis Presley for the album Blue Hawaii (1961). It was written by Hugo Peretti, Luigi Creatore, and George David Weiss and published by Gladys Music, Inc.[2] The melody is based on &quot;Plaisir d'amour&quot;,[4] a popular French love song composed in 1784 by Jean-Paul-Égide Martini. The song was initially written for a woman as &quot;Can't Help Falling in Love with Him&quot;, which explains the first and third line ending on &quot;in&quot; and &quot;sin&quot; rather than words rhyming with &quot;you&quot;.[5]&quot;Can't Help Falling in Love&quot; was featured in Presley's 1961 film Blue Hawaii. During the following four decades, it has been recorded by numerous other artists, including Bob Dylan on his 1973 album Dylan, Tom Smothers, Swedish pop group A-Teens, and the British reggae group UB40, whose 1993 version topped the U.S. and UK charts." wrappingWidth="307.6708984375" AnchorPane.bottomAnchor="-67.8369140625" AnchorPane.leftAnchor="45.6708984375" AnchorPane.rightAnchor="127.3291015625" AnchorPane.topAnchor="490.8369140625" />
+                  <Text layoutX="46.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Can't Help Falling in Love&quot; is a song recorded by American singer Elvis Presley for the album Blue Hawaii (1961). It was written by Hugo Peretti, Luigi Creatore, and George David Weiss and published by Gladys Music, Inc.[2] The melody is based on &quot;Plaisir d'amour&quot;,[4] a popular French love song composed in 1784 by Jean-Paul-Égide Martini. The song was initially written for a woman as &quot;Can't Help Falling in Love with Him&quot;, which explains the first and third line ending on &quot;in&quot; and &quot;sin&quot; rather than words rhyming with &quot;you&quot;.[5]&quot;Can't Help Falling in Love&quot; was featured in Presley's 1961 film Blue Hawaii. During the following four decades, it has been recorded by numerous other artists, including Bob Dylan on his 1973 album Dylan, Tom Smothers, Swedish pop group A-Teens, and the British reggae group UB40, whose 1993 version topped the U.S. and UK charts." wrappingWidth="307.6708984375" AnchorPane.bottomAnchor="-67.8369140625" AnchorPane.leftAnchor="45.6708984375" AnchorPane.rightAnchor="127.3291015625" AnchorPane.topAnchor="490.8369140625">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Text>
+                  <Button layoutX="431.0" layoutY="582.0" mnemonicParsing="false" onMouseClicked="#goToBrowser" style="-fx-background-color: orange;" text="More Details" textFill="#eb0707">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
                </children>
             </AnchorPane>
          </content>
