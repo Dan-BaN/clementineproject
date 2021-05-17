@@ -475,6 +475,27 @@ public class EntranceUIController implements Initializable {
         
     }
     
+       @FXML
+    void player(ActionEvent event) {
+        
+         
+      try{
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/clementine/musicplayer/musicplayer.fxml"));
+            Parent root5 = (Parent) fxmlLoader.load();
+           
+            Stage deviceStage = new Stage();
+            deviceStage.setTitle("Edit Track");
+            deviceStage.setScene(new Scene(root5));
+            deviceStage.show();
+        }
+        catch (Exception e){
+            
+            e.printStackTrace();
+        }
+        
+        
+    }
+    
     
 }
 
